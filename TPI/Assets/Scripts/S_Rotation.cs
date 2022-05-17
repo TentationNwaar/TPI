@@ -13,7 +13,7 @@ public class S_Rotation : MonoBehaviour
     //Gère la vitesse de rotation
     public float rotationSpeed = 100;
     //Défini si il est en rotation ou pas
-    bool dragging = false;
+    internal bool dragging = false;
     //Crée une variable avec le composant RigidBody
     Rigidbody rb;
 
@@ -50,8 +50,12 @@ public class S_Rotation : MonoBehaviour
         if (dragging)
         {
             rb.constraints = RigidbodyConstraints.None;
+            //On utilise les axe d'unity XY pour faire tourner le cube en fonction 
+            //du temps et de la vitesse de rotation
             float x = Input.GetAxis("Mouse X") * rotationSpeed * Time.fixedDeltaTime;
             float y = Input.GetAxis("Mouse Y") * rotationSpeed * Time.fixedDeltaTime;
+
+            //On applique la force au RigidBody
             rb.AddTorque(Vector3.down*x);
             rb.AddTorque(Vector3.right*y);
         }

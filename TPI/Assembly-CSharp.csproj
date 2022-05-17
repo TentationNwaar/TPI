@@ -37,6 +37,9 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\S_Rotation.cs" />
+     <Compile Include="Assets\Scripts\S_SelectFace.cs" />
+     <Compile Include="Assets\Scripts\S_ReadCube.cs" />
+     <Compile Include="Assets\Scripts\S_CubeState.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Users/po18ter/Downloads/ArchivesDownloads/2020.3.13f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
