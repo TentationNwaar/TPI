@@ -16,7 +16,8 @@ public class S_ReadCube : MonoBehaviour
     public Transform tRight;    
     public Transform tFront;
     public Transform tBack;
-    S_CubeState s_CubeState;
+    public S_CubeState s_CubeState;
+    public S_CubeMap s_CubeMap;
     private List<GameObject> frontRays = new List<GameObject>();
     private List<GameObject> backRays = new List<GameObject>();
     private List<GameObject> upRays = new List<GameObject>();
@@ -51,6 +52,9 @@ public class S_ReadCube : MonoBehaviour
         s_CubeState.right = ReadFace(rightRays, tRight);
         s_CubeState.front = ReadFace(frontRays, tFront);
         s_CubeState.back = ReadFace(backRays, tBack);
+
+        //On met à jour la map avec les positions trouvés
+        s_CubeMap.Set();
     }
 
     public List<GameObject> ReadFace(List<GameObject> rayStarts, Transform rayTransform)
@@ -65,12 +69,13 @@ public class S_ReadCube : MonoBehaviour
             //On vérifie si le raycast est en intersection avec un autre objet du layer
             if (Physics.Raycast(ray, rayTransform.forward, out hit, Mathf.Infinity, layerMask))
             {
+                
                 Debug.DrawRay(ray, rayTransform.forward * hit.distance, Color.yellow);
                 facesHit.Add(hit.collider.gameObject);
             }
             else
             {
-                Debug.DrawRay(ray, rayTransform.forward * 1000, Color.green);
+                Debug.DrawRay(ray, rayTransform.forward * 5, Color.green);
             }
         }    
         return facesHit;
@@ -81,10 +86,10 @@ public class S_ReadCube : MonoBehaviour
         //Augmente la ray liste avec des raycasts venant du transform, dans l'angle du cube
         upRays = BuildRays(tUp, new Vector3(90,90,0));
         downRays = BuildRays(tDown, new Vector3(270,90,0));
-        leftRays = BuildRays(tLeft, new Vector3(0,180,0));
-        rightRays = BuildRays(tRight, new Vector3(0,0,0));
-        frontRays = BuildRays(tFront, new Vector3(0,90,0));
-        backRays = BuildRays(tBack, new Vector3(0,270,0));
+        leftRays = BuildRays(tLeft, new Vector3(0,270,0));
+        rightRays = BuildRays(tRight, new Vector3(0,90,0));
+        frontRays = BuildRays(tFront, new Vector3(0,180,0));
+        backRays = BuildRays(tBack, new Vector3(0,360,0));
     }
 
     List<GameObject> BuildRays(Transform rayTransform, Vector3 direction)

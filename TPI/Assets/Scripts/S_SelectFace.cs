@@ -10,8 +10,10 @@ using UnityEngine;
 
 public class S_SelectFace : MonoBehaviour
 {
+    S_ReadCube s_ReadCube;
+    S_CubeState s_CubeState;
     public S_Rotation s_Rotation;
-
+    int layerMask = 1 << 3;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +26,39 @@ public class S_SelectFace : MonoBehaviour
         if (Input.GetMouseButtonDown(1) && !s_Rotation.dragging)
         {
             Debug.Log("OK");
+            //On regarde l'état actuel du cube
+            s_ReadCube.ReadState();
+
+            //Raycast depuis la souris pour voir quel face est touchée
+            RaycastHit hit;
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            if (Physics.Raycast(ray, out hit, 100.0f, layerMask))
+            {
+                GameObject face = hit.collider.gameObject;
+
+                //On fait une liste de tous les côtés(liste des faces des gameobjects)
+                List<List<GameObject>> cubeSides = new List<List<GameObject>>()
+                {
+                    s_CubeState.up,
+                    s_CubeState.down,
+                    s_CubeState.left,
+                    s_CubeState.right,
+                    s_CubeState.front,
+                    s_CubeState.back,
+                };
+                //Si la face touchée existe
+                foreach (List<GameObject> cubeSide in cubeSides)
+                {
+                    if (cubeSide.Contains(face))
+                    {
+                        // //print(cubeSide[0]);
+                        // s_CubeState.Pickup(cubeSide);
+
+                        // //On lance la rotation logique
+                        // cubeSide[4].transform.parent.GetComponent<S_PivotRotation>().Rotate(cubeSide);
+                    }
+                }
+            }
         }
     }
 }
