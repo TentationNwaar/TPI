@@ -41,10 +41,9 @@ public class S_ReadCube : MonoBehaviour
         ReadState();
     }
 
+    //Méthode qui permet de "lire" l'état du cube
     public void ReadState()
     {
-        s_CubeState = FindObjectOfType<S_CubeState>();
-
         //On défini l'état de chaque position de la liste des côtés pour connaître la couleur et la position
         s_CubeState.up = ReadFace(upRays, tUp);
         s_CubeState.down = ReadFace(downRays, tDown);
@@ -68,8 +67,7 @@ public class S_ReadCube : MonoBehaviour
 
             //On vérifie si le raycast est en intersection avec un autre objet du layer
             if (Physics.Raycast(ray, rayTransform.forward, out hit, Mathf.Infinity, layerMask))
-            {
-                
+            {     
                 Debug.DrawRay(ray, rayTransform.forward * hit.distance, Color.yellow);
                 facesHit.Add(hit.collider.gameObject);
             }
@@ -97,7 +95,7 @@ public class S_ReadCube : MonoBehaviour
         //On utilise le raycount pour nommer les différents ray pour être sûr qu'ils sont dans le bon ordre
         int rayCount = 0;
 
-        //On crée une liste de 15 ray pour la forme des côtés du cube, 0 ray pour le haut gauche, 15 pour le bas droite
+        //On crée une liste de 16 ray pour la forme des côtés du cube, 0 ray pour le haut gauche, 15 pour le bas droite
         /*
         |0||1||2||3|
         |4||5||6||7|

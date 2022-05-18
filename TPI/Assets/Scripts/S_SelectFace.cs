@@ -10,14 +10,20 @@ using UnityEngine;
 
 public class S_SelectFace : MonoBehaviour
 {
-    S_ReadCube s_ReadCube;
-    S_CubeState s_CubeState;
+    //On appelle les autres scripts pour pouvoir
+    //les utiliser ici
+    public S_ReadCube s_ReadCube;
+    public S_CubeState s_CubeState;
     public S_Rotation s_Rotation;
+
+    //Cette variable permet de définir quel layerMask utiliser
     int layerMask = 1 << 3;
     // Start is called before the first frame update
     void Start()
     {
-        
+        s_CubeState = FindObjectOfType<S_CubeState>();
+        s_ReadCube = FindObjectOfType<S_ReadCube>();
+        s_Rotation = FindObjectOfType<S_Rotation>();
     }
 
     // Update is called once per frame
@@ -26,6 +32,7 @@ public class S_SelectFace : MonoBehaviour
         if (Input.GetMouseButtonDown(1) && !s_Rotation.dragging)
         {
             Debug.Log("OK");
+            
             //On regarde l'état actuel du cube
             s_ReadCube.ReadState();
 
