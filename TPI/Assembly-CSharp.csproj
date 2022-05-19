@@ -41,6 +41,7 @@
      <Compile Include="Assets\Scripts\S_SelectFace.cs" />
      <Compile Include="Assets\Scripts\S_Rotation.cs" />
      <Compile Include="Assets\Scripts\S_CubeMap.cs" />
+     <Compile Include="Assets\Scripts\S_PivotRotation.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Users/po18ter/Documents/2020.3.13f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

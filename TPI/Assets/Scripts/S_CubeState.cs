@@ -22,4 +22,26 @@ public class S_CubeState : MonoBehaviour
     {
         
     }
+
+    public void Pickup(List<GameObject> cubeSide)
+    {
+        foreach (GameObject face in cubeSide)
+        {
+            //On attache le parent de chaque face (petit cube) au parent de l'index (cube du millieu), sauf si c'est déjà le cas
+            if (face != cubeSide[4])
+            {
+                face.transform.parent.transform.parent = cubeSide[4].transform.parent;
+            }
+        }
+    }
+    public void PutDown(List<GameObject> littleCubes, Transform pivot)
+    {
+        foreach (GameObject littleCube in littleCubes)
+        {
+            if (littleCube != littleCubes[4])
+            {
+                littleCube.transform.parent.transform.parent = pivot;
+            }
+        }
+    }
 }
