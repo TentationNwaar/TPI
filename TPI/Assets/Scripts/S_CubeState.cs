@@ -28,9 +28,9 @@ public class S_CubeState : MonoBehaviour
         foreach (GameObject face in cubeSide)
         {
             //On attache le parent de chaque face (petit cube) au parent de l'index (cube du millieu), sauf si c'est déjà le cas
-            if (face != cubeSide[4])
+            if (face != cubeSide[5] || face != cubeSide[6] || face != cubeSide[9] || face != cubeSide[10])
             {
-                face.transform.parent.transform.parent = cubeSide[4].transform.parent;
+                face.transform.parent.transform.parent = cubeSide[5].transform.parent;
             }
         }
     }
@@ -38,7 +38,7 @@ public class S_CubeState : MonoBehaviour
     {
         foreach (GameObject littleCube in littleCubes)
         {
-            if (littleCube != littleCubes[4])
+            if (littleCube != littleCubes[5] || littleCube != littleCubes[6] || littleCube != littleCubes[9] || littleCube != littleCubes[10])
             {
                 littleCube.transform.parent.transform.parent = pivot;
             }

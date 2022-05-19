@@ -16,12 +16,15 @@ public class S_Rotation : MonoBehaviour
     internal bool dragging = false;
     //Crée une variable avec le composant RigidBody
     Rigidbody rb;
+    Quaternion lastRotation;
+    public GameObject cube;
 
     // Start is called before the first frame update
     void Start()
     {
         //Au démarrage, on lui attribut le composant RigidBody
         rb = GetComponent<Rigidbody>();
+        cube.transform.localRotation = lastRotation;
     }
 
     // Update is called once per frame
@@ -58,6 +61,27 @@ public class S_Rotation : MonoBehaviour
             //On applique la force au RigidBody
             rb.AddTorque(Vector3.down*x);
             rb.AddTorque(Vector3.right*y);
+        }
+
+        if (Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            //cube.transform.SetPositionAndRotation(new Vector3(0,0,0), Quaternion.Euler(new Vector3(0,90,0)));
+            cube.transform.Rotate(0,90,0);
+        }
+
+        if (Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            cube.transform.Rotate(0,-90,0);
+        }
+
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            cube.transform.Rotate(90,0,0);
+        }
+
+        if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            cube.transform.Rotate(-90,0,0);
         }
     }
 }

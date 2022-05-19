@@ -38,7 +38,7 @@ public class S_ReadCube : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        ReadState();
+        
     }
 
     //Méthode qui permet de "lire" l'état du cube
