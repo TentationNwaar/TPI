@@ -30,9 +30,7 @@ public class S_SelectFace : MonoBehaviour
     void Update()
     {
         if (Input.GetMouseButtonDown(1) && !s_Rotation.dragging)
-        {
-            Debug.Log("OK");
-            
+        {      
             //On regarde l'état actuel du cube
             s_ReadCube.ReadState();
 
@@ -58,7 +56,7 @@ public class S_SelectFace : MonoBehaviour
                 {
                     if (cubeSide.Contains(face))
                     {
-                        //print(cubeSide[5]);
+                        print(cubeSide[5]);
                         s_CubeState.Pickup(cubeSide);
 
                         //On lance la rotation logique

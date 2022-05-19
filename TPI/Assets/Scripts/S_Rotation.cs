@@ -19,6 +19,8 @@ public class S_Rotation : MonoBehaviour
     Quaternion lastRotation;
     public GameObject cube;
 
+    public S_PauseMenu s_PauseMenu;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -36,6 +38,21 @@ public class S_Rotation : MonoBehaviour
             dragging = false;
             //On bloque tous les mouvements
             rb.constraints = RigidbodyConstraints.FreezeAll;
+        }
+
+        //Si on appuye sur esc ou le bouton visuel de sortie, le menu s'affiche
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Debug.Log("esc");
+            if (s_PauseMenu.GameIsPaused)
+            {
+                s_PauseMenu.Resume();
+            }
+
+            else
+            {
+                s_PauseMenu.Pause();
+            }
         }
         
     }

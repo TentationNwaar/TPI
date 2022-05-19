@@ -1,3 +1,9 @@
+/*
+Auteur : Maxence Weyermann
+Date : 19.05.22
+Lieu : ETML
+Description : Script qui permet de gérer le menu
+*/
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -37,7 +43,6 @@ public class S_PivotRotation : MonoBehaviour
             SpinSide(activeSide);
             if (Input.GetMouseButtonUp(1))
             {
-                Debug.Log("Ouaah");
                 dragging = false;
                 RotateToRightAngle();
             }
@@ -100,7 +105,7 @@ public class S_PivotRotation : MonoBehaviour
         dragging = true;
 
         //Crée un vecteur pour tourner autour
-        localForward = Vector3.zero - side[4].transform.parent.transform.localPosition; 
+        localForward = Vector3.zero - side[5].transform.parent.transform.localPosition; 
     }
 
     public void RotateToRightAngle()
