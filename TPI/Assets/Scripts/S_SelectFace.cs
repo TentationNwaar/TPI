@@ -15,6 +15,7 @@ public class S_SelectFace : MonoBehaviour
     public S_ReadCube s_ReadCube;
     public S_CubeState s_CubeState;
     public S_Rotation s_Rotation;
+    public S_PivotRotation s_PivotRotation;
 
     //Cette variable permet de définir quel layerMask utiliser
     int layerMask = 1 << 3;
@@ -56,11 +57,12 @@ public class S_SelectFace : MonoBehaviour
                 {
                     if (cubeSide.Contains(face))
                     {
-                        print(cubeSide[5]);
+                        //print(cubeSide[5]);
                         s_CubeState.Pickup(cubeSide);
 
                         //On lance la rotation logique
                         cubeSide[5].transform.parent.GetComponent<S_PivotRotation>().Rotate(cubeSide);
+                        
                     }
                 }
             }

@@ -10,20 +10,41 @@ using UnityEngine;
 
 public class S_PivotRotation : MonoBehaviour
 {
+    //Côté actif du cube
     private List<GameObject> activeSide;
+
+    //Vecteur permettant de tourner
     private Vector3 localForward;
+
+    //Position de la souris
     private Vector3 mouseRef;
+
+    //Détermine si le mouvement est en rotation ou non
     private bool dragging = false;
+
+    //Détermine si il faut ajuster automatiquement la rotation ou non
     private bool autoRotating = false;
 
+    //Sensibilité du cube
     private float sensitivity = 0.3f;
-    private float speed = 200f;
-    private Vector3 rotation;
-    private Quaternion targetQuaternion;
-    private S_ReadCube s_ReadCube;
 
+    //Vitesse de rotation
+    private float speed = 200f;
+
+    //Vecteur de rotation
+    private Vector3 rotation;
+
+    //Quaternion ciblé
+    private Quaternion targetQuaternion;
+
+    public GameObject turnFront;
+
+    //Appel au script mentionné
+    private S_ReadCube s_ReadCube;
     private S_CubeState s_CubeState;
     //public S_Automate //s_Automate;
+
+    //Fait référence à la dernière rotation
     public Quaternion lastRotation;
 
     // Start is called before the first frame update
@@ -75,22 +96,29 @@ public class S_PivotRotation : MonoBehaviour
 
         if (side == s_CubeState.left)
         {
-            rotation.z = (AdditionMouse) * sensitivity * 1;
+            rotation.x = (AdditionMouse) * sensitivity * 1;
         }
 
         if (side == s_CubeState.right)
         {
-            rotation.z = (AdditionMouse) * sensitivity * -1;
+            rotation.x = (AdditionMouse) * sensitivity * -1;
         }
 
         if (side == s_CubeState.front)
         {
-            rotation.x = (AdditionMouse) * sensitivity * -1;
+            //turnFront.transform.SetParent();
+            turnFront.transform.localRotation = Quaternion.Euler(0,0,(AdditionMouse) * sensitivity * -1);          
+            rotation.z = (AdditionMouse) * sensitivity * -1;
         }
 
         if (side == s_CubeState.back)
         {
-            rotation.x = (AdditionMouse) * sensitivity * 1;
+            rotation.z = (AdditionMouse) * sensitivity * 1;
+        }
+
+        foreach (var sides in side)
+        {
+            
         }
         
         //Rotation
@@ -98,6 +126,7 @@ public class S_PivotRotation : MonoBehaviour
         mouseRef = Input.mousePosition;
     }
 
+    //Méthode pour faire tourner le côté
     public void Rotate(List<GameObject> side)
     {
         activeSide = side;
@@ -105,9 +134,12 @@ public class S_PivotRotation : MonoBehaviour
         dragging = true;
 
         //Crée un vecteur pour tourner autour
-        localForward = Vector3.zero - side[5].transform.parent.transform.localPosition; 
+        //localForward = Vector3.zero - side[6].transform.parent.transform.localPosition; 
+        //localForward = Vector3.zero - turnFront.transform.parent.transform.localPosition; 
+        
     }
 
+    //Ajuste l'angle de rotation
     public void RotateToRightAngle()
     {
         Vector3 vec = transform.localEulerAngles;

@@ -28,7 +28,7 @@ public class S_CubeState : MonoBehaviour
         foreach (GameObject face in cubeSide)
         {
             //On attache le parent de chaque face (petit cube) au parent de l'index (cube du millieu), sauf si c'est déjà le cas
-            if (face != cubeSide[5] || face != cubeSide[6] || face != cubeSide[9] || face != cubeSide[10])
+            if (face != cubeSide[5] /* || face != cubeSide[6] || face != cubeSide[9] || face != cubeSide[10]*/)
             {
                 face.transform.parent.transform.parent = cubeSide[5].transform.parent;
             }
