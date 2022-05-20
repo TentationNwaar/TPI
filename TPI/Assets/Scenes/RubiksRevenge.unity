@@ -1540,7 +1540,7 @@ GameObject:
   - component: {fileID: 59043006}
   - component: {fileID: 59043005}
   m_Layer: 5
-  m_Name: Darker
+  m_Name: I_Darker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8393,7 +8393,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 1920, y: 1200}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -27964,7 +27964,7 @@ GameObject:
   - component: {fileID: 1246147303}
   - component: {fileID: 1246147302}
   m_Layer: 5
-  m_Name: Darker
+  m_Name: I_Darker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

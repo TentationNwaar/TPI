@@ -13,6 +13,7 @@ public class S_PauseMenu : MonoBehaviour
     //Permet d'utiliser le script en question
     public S_SelectFace s_SelectFace;
 
+    //Permet d'activer le menu suivant
     public GameObject colorMenu;
 
     //Défini si le jeu est en pause ou non
