@@ -59,9 +59,17 @@ public class S_SelectFace : MonoBehaviour
                     {
                         //print(cubeSide[5]);
                         s_CubeState.Pickup(cubeSide);
+                        //Debug.Log(face);
 
                         //On lance la rotation logique
-                        cubeSide[5].transform.parent.GetComponent<S_PivotRotation>().Rotate(cubeSide);
+                        /*if (face.name == "F")
+                        {
+                            
+                        }*/
+                        
+                        //cubeSide[5].transform.parent = s_PivotRotation.turnFront.transform;
+                        //s_PivotRotation.turnFront.GetComponent<S_PivotRotation>().Rotate(cubeSide);
+                        cubeSide[16].GetComponent<S_PivotRotation>().Rotate(cubeSide);
                         
                     }
                 }

@@ -16,29 +16,32 @@ public class S_CubeState : MonoBehaviour
     public List<GameObject> down = new List<GameObject>();
     public List<GameObject> left = new List<GameObject>();
     public List<GameObject> right = new List<GameObject>();
+    public List<GameObject> center = new List<GameObject>();
+    internal List<GameObject> cubeSide = new List<GameObject>();
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    //public S_PivotRotation s_PivotRotation;
 
+    //Permet de grouper les pièces entre elles pour
+    //Faire la rotation de la face
     public void Pickup(List<GameObject> cubeSide)
     {
         foreach (GameObject face in cubeSide)
         {
             //On attache le parent de chaque face (petit cube) au parent de l'index (cube du millieu), sauf si c'est déjà le cas
-            if (face != cubeSide[5] /* || face != cubeSide[6] || face != cubeSide[9] || face != cubeSide[10]*/)
+            if (face != cubeSide[16])
             {
-                face.transform.parent.transform.parent = cubeSide[5].transform.parent;
+                face.transform.parent.transform.parent = cubeSide[16].transform;
             }
         }
     }
+
+    //Permet de relâcher les petites pièces 
+    //Pour ne pas créer de bugs et les réutiliser
     public void PutDown(List<GameObject> littleCubes, Transform pivot)
     {
         foreach (GameObject littleCube in littleCubes)
         {
-            if (littleCube != littleCubes[5] || littleCube != littleCubes[6] || littleCube != littleCubes[9] || littleCube != littleCubes[10])
+            if (littleCube != littleCubes[16] /*|| littleCube != littleCubes[6] || littleCube != littleCubes[9] || littleCube != littleCubes[10]*/)
             {
                 littleCube.transform.parent.transform.parent = pivot;
             }

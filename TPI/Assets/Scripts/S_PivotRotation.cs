@@ -45,7 +45,7 @@ public class S_PivotRotation : MonoBehaviour
     //public S_Automate //s_Automate;
 
     //Fait référence à la dernière rotation
-    public Quaternion lastRotation;
+    internal Quaternion lastRotation;
 
     // Start is called before the first frame update
     void Start()
@@ -106,8 +106,7 @@ public class S_PivotRotation : MonoBehaviour
 
         if (side == s_CubeState.front)
         {
-            //turnFront.transform.SetParent();
-            turnFront.transform.localRotation = Quaternion.Euler(0,0,(AdditionMouse) * sensitivity * -1);          
+            //turnFront.transform.localRotation = Quaternion.Euler(0,0,(AdditionMouse) * sensitivity * -1);          
             rotation.z = (AdditionMouse) * sensitivity * -1;
         }
 
@@ -136,7 +135,6 @@ public class S_PivotRotation : MonoBehaviour
         //Crée un vecteur pour tourner autour
         //localForward = Vector3.zero - side[6].transform.parent.transform.localPosition; 
         //localForward = Vector3.zero - turnFront.transform.parent.transform.localPosition; 
-        
     }
 
     //Ajuste l'angle de rotation

@@ -16,6 +16,7 @@ public class S_ReadCube : MonoBehaviour
     public Transform tRight;    
     public Transform tFront;
     public Transform tBack;
+    public Transform tCenter;
     public S_CubeState s_CubeState;
     public S_CubeMap s_CubeMap;
     private List<GameObject> frontRays = new List<GameObject>();
@@ -24,21 +25,24 @@ public class S_ReadCube : MonoBehaviour
     private List<GameObject> downRays = new List<GameObject>();
     private List<GameObject> leftRays = new List<GameObject>();
     private List<GameObject> rightRays = new List<GameObject>();
+    private List<GameObject> centerRays = new List<GameObject>();
     private int layerMask = 1 << 3; //Pour les faces
     public GameObject emptyGo;
+    int rayCount = 0;
 
     // Start is called before the first frame update
     void Start()
     {
         s_CubeState =  FindObjectOfType<S_CubeState>();
-        SetRayTransforms();
-        ReadState();    
+        SetRayTransforms(); 
+        ReadState();          
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        //ReadState();
+        //BuildCenterRay();
     }
 
     //Méthode qui permet de "lire" l'état du cube
@@ -51,6 +55,7 @@ public class S_ReadCube : MonoBehaviour
         s_CubeState.right = ReadFace(rightRays, tRight);
         s_CubeState.front = ReadFace(frontRays, tFront);
         s_CubeState.back = ReadFace(backRays, tBack);
+        //s_CubeState.center = ReadFace(centerRays, tCenter);
 
         //On met à jour la map avec les positions trouvés
         s_CubeMap.Set();
@@ -63,18 +68,46 @@ public class S_ReadCube : MonoBehaviour
         foreach (GameObject rayStart in rayStarts)
         {
             Vector3 ray = rayStart.transform.position;
+            Vector3 rayFCenter = tCenter.transform.position;
             RaycastHit hit;
 
             //On vérifie si le raycast est en intersection avec un autre objet du layer
-            if (Physics.Raycast(ray, rayTransform.forward, out hit, Mathf.Infinity, layerMask))
+
+            //Debug.Log(rayStart.name);
+
+            ray = rayStart.name == "FCenter" ? rayFCenter : ray;
+            var direction = /*rayStart.name == "FCenter" ? tCenter.forward :*/ rayTransform.forward;
+
+            if (Physics.Raycast(ray, direction, out hit, Mathf.Infinity, layerMask))
             {     
-                Debug.DrawRay(ray, rayTransform.forward * hit.distance, Color.yellow);
+
+                Debug.DrawRay(ray, direction * hit.distance, Color.yellow);
                 facesHit.Add(hit.collider.gameObject);
+
+                if (hit.collider.name == "FCenter")
+                {
+                    Debug.Log(hit.collider.name);
+                    //facesHit.Add(hit.collider.gameObject);
+                }
             }
+
+            /*
+
+            if (Physics.Raycast(rayFCenter, tCenter.forward, out hit, Mathf.Infinity, layerMask))
+            {
+                Debug.DrawRay(rayFCenter, tCenter.forward * hit.distance, Color.yellow);
+                if (hit.collider.name == "FCenter")
+                {
+                    Debug.Log(hit.collider.name);
+                    //facesHit.Add(hit.collider.gameObject);
+                }
+            }
+            */
+            /*
             else
             {
                 Debug.DrawRay(ray, rayTransform.forward * 5, Color.green);
-            }
+            }*/
         }    
         return facesHit;
     }
@@ -88,12 +121,14 @@ public class S_ReadCube : MonoBehaviour
         rightRays = BuildRays(tRight, new Vector3(0,90,0));
         frontRays = BuildRays(tFront, new Vector3(0,180,0));
         backRays = BuildRays(tBack, new Vector3(0,360,0));
+        //centerRays = BuildRays(tCenter, new Vector3(0,360,0));
+        //upRays.AddAll(BuildCenterRay());
     }
 
     List<GameObject> BuildRays(Transform rayTransform, Vector3 direction)
     {
         //On utilise le raycount pour nommer les différents ray pour être sûr qu'ils sont dans le bon ordre
-        int rayCount = 0;
+        rayCount = 0;
 
         //On crée une liste de 16 ray pour la forme des côtés du cube, 0 ray pour le haut gauche, 15 pour le bas droite
         /*
@@ -116,10 +151,35 @@ public class S_ReadCube : MonoBehaviour
                 rayStart.name = rayCount.ToString();
                 rays.Add(rayStart);
                 rayCount++;
-            }    
+            }
         }
+
+        GameObject center = Instantiate(emptyGo, /*tCenter.transform.position*/new Vector3(1.3973527f, 1.65097499f, 2.2939024f), Quaternion.identity, rayTransform);
+        center.name="FCenter";
+        rays.Add(center);
+        rayCount++;
+
         rayTransform.localRotation = Quaternion.Euler(direction);
         return rays;
+    }
+
+    void BuildCenterRay()
+    {
+        Vector3 ray = tCenter.transform.position;
+        RaycastHit hit;
+        if (Physics.Raycast(ray, tCenter.forward, out hit, Mathf.Infinity, layerMask))
+        {
+            Debug.DrawRay(ray, tCenter.forward * hit.distance, Color.yellow);
+            if (hit.collider.name == "FCenter")
+            {   
+                Debug.Log(rayCount); 
+            }      
+        }
+        else
+        {
+            Debug.DrawRay(ray, tCenter.forward * 1000, Color.green);
+            Debug.Log("non");
+        }
     }
     
 }
