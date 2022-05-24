@@ -17,6 +17,11 @@ public class S_ReadCube : MonoBehaviour
     public Transform tFront;
     public Transform tBack;
     public Transform tCenter;
+    public Transform tLCenter;
+    public Transform tBCenter;
+    public Transform tUCenter;
+    public Transform tRCenter;
+    public Transform tDCenter;
     public S_CubeState s_CubeState;
     public S_CubeMap s_CubeMap;
     private List<GameObject> frontRays = new List<GameObject>();
@@ -42,7 +47,6 @@ public class S_ReadCube : MonoBehaviour
     void Update()
     {
         //ReadState();
-        //BuildCenterRay();
     }
 
     //Méthode qui permet de "lire" l'état du cube
@@ -69,60 +73,40 @@ public class S_ReadCube : MonoBehaviour
         {
             Vector3 ray = rayStart.transform.position;
             Vector3 rayFCenter = tCenter.transform.position;
+            Vector3 rayLCenter = tLCenter.transform.position;
+            Vector3 rayBCenter = tBCenter.transform.position;
+            Vector3 rayUCenter = tUCenter.transform.position;
+            Vector3 rayRCenter = tRCenter.transform.position;
+            Vector3 rayDCenter = tDCenter.transform.position;
             RaycastHit hit;
 
             //On vérifie si le raycast est en intersection avec un autre objet du layer
-
-            //Debug.Log(rayStart.name);
-
             ray = rayStart.name == "FCenter" ? rayFCenter : ray;
-            var direction = /*rayStart.name == "FCenter" ? tCenter.forward :*/ rayTransform.forward;
+            ray = rayStart.name == "LCenter" ? rayLCenter : ray;
+            ray = rayStart.name == "BCenter" ? rayBCenter : ray;
+            ray = rayStart.name == "UCenter" ? rayUCenter : ray;
+            ray = rayStart.name == "RCenter" ? rayRCenter : ray;
+            ray = rayStart.name == "DCenter" ? rayDCenter : ray;
+            var direction = rayTransform.forward;
 
             if (Physics.Raycast(ray, direction, out hit, Mathf.Infinity, layerMask))
             {     
-
                 Debug.DrawRay(ray, direction * hit.distance, Color.yellow);
                 facesHit.Add(hit.collider.gameObject);
-
-                if (hit.collider.name == "FCenter")
-                {
-                    Debug.Log(hit.collider.name);
-                    //facesHit.Add(hit.collider.gameObject);
-                }
             }
-
-            /*
-
-            if (Physics.Raycast(rayFCenter, tCenter.forward, out hit, Mathf.Infinity, layerMask))
-            {
-                Debug.DrawRay(rayFCenter, tCenter.forward * hit.distance, Color.yellow);
-                if (hit.collider.name == "FCenter")
-                {
-                    Debug.Log(hit.collider.name);
-                    //facesHit.Add(hit.collider.gameObject);
-                }
-            }
-            */
-            /*
-            else
-            {
-                Debug.DrawRay(ray, rayTransform.forward * 5, Color.green);
-            }*/
         }    
         return facesHit;
     }
 
+    //Augmente la ray liste avec des raycasts venant du transform, dans l'angle du cube
     void SetRayTransforms()
     {
-        //Augmente la ray liste avec des raycasts venant du transform, dans l'angle du cube
         upRays = BuildRays(tUp, new Vector3(90,90,0));
         downRays = BuildRays(tDown, new Vector3(270,90,0));
         leftRays = BuildRays(tLeft, new Vector3(0,270,0));
         rightRays = BuildRays(tRight, new Vector3(0,90,0));
         frontRays = BuildRays(tFront, new Vector3(0,180,0));
         backRays = BuildRays(tBack, new Vector3(0,360,0));
-        //centerRays = BuildRays(tCenter, new Vector3(0,360,0));
-        //upRays.AddAll(BuildCenterRay());
     }
 
     List<GameObject> BuildRays(Transform rayTransform, Vector3 direction)
@@ -154,32 +138,39 @@ public class S_ReadCube : MonoBehaviour
             }
         }
 
-        GameObject center = Instantiate(emptyGo, /*tCenter.transform.position*/new Vector3(1.3973527f, 1.65097499f, 2.2939024f), Quaternion.identity, rayTransform);
-        center.name="FCenter";
-        rays.Add(center);
+        //On instancie le raycast en dur à la position centrale de la face pour chaque cube
+        GameObject fcenter = Instantiate(emptyGo, new Vector3(1.4f, 1.66f, 2.3f), Quaternion.identity, rayTransform);
+        fcenter.name="FCenter";
+        rays.Add(fcenter);
+        rayCount++;
+
+        GameObject lcenter = Instantiate(emptyGo, new Vector3(3.48f, 1.65f, 0.23f), Quaternion.identity, rayTransform);
+        lcenter.name="LCenter";
+        rays.Add(lcenter);
+        rayCount++;
+
+
+        GameObject bcenter = Instantiate(emptyGo, new Vector3(1.4f, 1.66f, -1.83f), Quaternion.identity, rayTransform);
+        bcenter.name="BCenter";
+        rays.Add(bcenter);
+        rayCount++;
+
+        GameObject ucenter = Instantiate(emptyGo, new Vector3(1.4f, 3.7f, 0.24f), Quaternion.identity, rayTransform);
+        ucenter.name="UCenter";
+        rays.Add(ucenter);
+        rayCount++;
+
+        GameObject rcenter = Instantiate(emptyGo, new Vector3(-0.62f, 1.66f, 0.24f), Quaternion.identity, rayTransform);
+        rcenter.name="RCenter";
+        rays.Add(rcenter);
+        rayCount++;
+
+        GameObject dcenter = Instantiate(emptyGo, new Vector3(1.4f, -0.4f, 0.24f), Quaternion.identity, rayTransform);
+        dcenter.name="DCenter";
+        rays.Add(dcenter);
         rayCount++;
 
         rayTransform.localRotation = Quaternion.Euler(direction);
         return rays;
     }
-
-    void BuildCenterRay()
-    {
-        Vector3 ray = tCenter.transform.position;
-        RaycastHit hit;
-        if (Physics.Raycast(ray, tCenter.forward, out hit, Mathf.Infinity, layerMask))
-        {
-            Debug.DrawRay(ray, tCenter.forward * hit.distance, Color.yellow);
-            if (hit.collider.name == "FCenter")
-            {   
-                Debug.Log(rayCount); 
-            }      
-        }
-        else
-        {
-            Debug.DrawRay(ray, tCenter.forward * 1000, Color.green);
-            Debug.Log("non");
-        }
-    }
-    
 }
