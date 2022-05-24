@@ -59,7 +59,6 @@ public class S_ReadCube : MonoBehaviour
         s_CubeState.right = ReadFace(rightRays, tRight);
         s_CubeState.front = ReadFace(frontRays, tFront);
         s_CubeState.back = ReadFace(backRays, tBack);
-        //s_CubeState.center = ReadFace(centerRays, tCenter);
 
         //On met à jour la map avec les positions trouvés
         s_CubeMap.Set();
@@ -148,7 +147,6 @@ public class S_ReadCube : MonoBehaviour
         lcenter.name="LCenter";
         rays.Add(lcenter);
         rayCount++;
-
 
         GameObject bcenter = Instantiate(emptyGo, new Vector3(1.4f, 1.66f, -1.83f), Quaternion.identity, rayTransform);
         bcenter.name="BCenter";

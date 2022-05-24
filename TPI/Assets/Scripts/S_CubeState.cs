@@ -16,10 +16,8 @@ public class S_CubeState : MonoBehaviour
     public List<GameObject> down = new List<GameObject>();
     public List<GameObject> left = new List<GameObject>();
     public List<GameObject> right = new List<GameObject>();
-    public List<GameObject> center = new List<GameObject>();
-    internal List<GameObject> cubeSide = new List<GameObject>();
-
-    //public S_PivotRotation s_PivotRotation;
+    public static bool autoRotating = false;
+    public static bool started = false;
 
     //Permet de grouper les pièces entre elles pour
     //Faire la rotation de la face
@@ -41,7 +39,7 @@ public class S_CubeState : MonoBehaviour
     {
         foreach (GameObject littleCube in littleCubes)
         {
-            if (littleCube != littleCubes[16] /*|| littleCube != littleCubes[6] || littleCube != littleCubes[9] || littleCube != littleCubes[10]*/)
+            if (littleCube != littleCubes[16])
             {
                 littleCube.transform.parent.transform.parent = pivot;
             }
