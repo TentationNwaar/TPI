@@ -3262,6 +3262,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnFront: {fileID: 119934165}
+  s_Automate: {fileID: 0}
 --- !u!65 &119934168
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5015,6 +5016,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnFront: {fileID: 185401359}
+  s_Automate: {fileID: 0}
 --- !u!1 &186473894
 GameObject:
   m_ObjectHideFlags: 0
@@ -8281,6 +8283,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnFront: {fileID: 1700412805}
+  s_Automate: {fileID: 0}
 --- !u!1 &296912135
 GameObject:
   m_ObjectHideFlags: 0
@@ -8398,6 +8401,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnFront: {fileID: 1700412805}
+  s_Automate: {fileID: 0}
 --- !u!1 &298487567
 GameObject:
   m_ObjectHideFlags: 0
@@ -8877,6 +8881,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnFront: {fileID: 308178367}
+  s_Automate: {fileID: 0}
 --- !u!1 &312451106
 GameObject:
   m_ObjectHideFlags: 0
@@ -11810,6 +11815,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnFront: {fileID: 1700412805}
+  s_Automate: {fileID: 0}
 --- !u!1 &450055851
 GameObject:
   m_ObjectHideFlags: 0
@@ -12789,6 +12795,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnFront: {fileID: 1700412805}
+  s_Automate: {fileID: 0}
 --- !u!1 &498882659
 GameObject:
   m_ObjectHideFlags: 0
@@ -13889,6 +13896,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnFront: {fileID: 1700412805}
+  s_Automate: {fileID: 0}
 --- !u!1 &549794166
 GameObject:
   m_ObjectHideFlags: 0
@@ -17202,6 +17210,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnFront: {fileID: 1700412805}
+  s_Automate: {fileID: 0}
 --- !u!1 &735573717
 GameObject:
   m_ObjectHideFlags: 0
@@ -20316,6 +20325,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnFront: {fileID: 877022502}
+  s_Automate: {fileID: 0}
 --- !u!65 &877022505
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20392,7 +20402,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 100
-  cube: {fileID: 1967996712}
+  cube: {fileID: 6852744839851610462}
   s_PauseMenu: {fileID: 1717098800}
 --- !u!54 &877232598
 Rigidbody:
@@ -20537,6 +20547,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnFront: {fileID: 883353551}
+  s_Automate: {fileID: 0}
 --- !u!1 &885825568
 GameObject:
   m_ObjectHideFlags: 0
@@ -22611,6 +22622,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnFront: {fileID: 1700412805}
+  s_Automate: {fileID: 0}
 --- !u!1 &973654756
 GameObject:
   m_ObjectHideFlags: 0
@@ -23947,6 +23959,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnFront: {fileID: 1700412805}
+  s_Automate: {fileID: 0}
 --- !u!1 &1029944708
 GameObject:
   m_ObjectHideFlags: 0
@@ -25865,6 +25878,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnFront: {fileID: 1700412805}
+  s_Automate: {fileID: 0}
 --- !u!1 &1109144714
 GameObject:
   m_ObjectHideFlags: 0
@@ -27768,6 +27782,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnFront: {fileID: 1700412805}
+  s_Automate: {fileID: 0}
 --- !u!1 &1204160024
 GameObject:
   m_ObjectHideFlags: 0
@@ -29212,6 +29227,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnFront: {fileID: 1700412805}
+  s_Automate: {fileID: 0}
 --- !u!1 &1277637547
 GameObject:
   m_ObjectHideFlags: 0
@@ -29719,6 +29735,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnFront: {fileID: 1700412805}
+  s_Automate: {fileID: 0}
 --- !u!1 &1293456556
 GameObject:
   m_ObjectHideFlags: 0
@@ -30694,6 +30711,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnFront: {fileID: 1700412805}
+  s_Automate: {fileID: 0}
 --- !u!1 &1315909831
 GameObject:
   m_ObjectHideFlags: 0
@@ -31178,6 +31196,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnFront: {fileID: 1700412805}
+  s_Automate: {fileID: 0}
 --- !u!1 &1331803905
 GameObject:
   m_ObjectHideFlags: 0
@@ -31295,6 +31314,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnFront: {fileID: 1700412805}
+  s_Automate: {fileID: 0}
 --- !u!1 &1340876038
 GameObject:
   m_ObjectHideFlags: 0
@@ -33104,6 +33124,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnFront: {fileID: 1700412805}
+  s_Automate: {fileID: 0}
 --- !u!1 &1405244588
 GameObject:
   m_ObjectHideFlags: 0
@@ -33325,6 +33346,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnFront: {fileID: 1430483353}
+  s_Automate: {fileID: 0}
 --- !u!65 &1430483356
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34066,6 +34088,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnFront: {fileID: 1700412805}
+  s_Automate: {fileID: 0}
 --- !u!1 &1463238690
 GameObject:
   m_ObjectHideFlags: 0
@@ -34770,6 +34793,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnFront: {fileID: 1700412805}
+  s_Automate: {fileID: 0}
 --- !u!1 &1482775932
 GameObject:
   m_ObjectHideFlags: 0
@@ -36390,6 +36414,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnFront: {fileID: 1700412805}
+  s_Automate: {fileID: 0}
 --- !u!1 &1533962598
 GameObject:
   m_ObjectHideFlags: 0
@@ -37109,6 +37134,14 @@ PrefabInstance:
     - target: {fileID: 7470856979579443485, guid: ded3a7ddb0e4ca14e81803b876d399ca, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7470856979579443486, guid: ded3a7ddb0e4ca14e81803b876d399ca, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7270892995882875689}
+    - target: {fileID: 7470856979579443486, guid: ded3a7ddb0e4ca14e81803b876d399ca, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Solver
       objectReference: {fileID: 0}
     - target: {fileID: 7470856979579443487, guid: ded3a7ddb0e4ca14e81803b876d399ca, type: 3}
       propertyPath: m_Sprite
@@ -38929,6 +38962,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnFront: {fileID: 1618857753}
+  s_Automate: {fileID: 0}
 --- !u!65 &1618857756
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -40021,6 +40055,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnFront: {fileID: 1700412805}
+  s_Automate: {fileID: 0}
 --- !u!1 &1646560915
 GameObject:
   m_ObjectHideFlags: 0
@@ -41519,6 +41554,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnFront: {fileID: 1700412805}
+  s_Automate: {fileID: 0}
 --- !u!1 &1703699328
 GameObject:
   m_ObjectHideFlags: 0
@@ -41733,6 +41769,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnFront: {fileID: 1700412805}
+  s_Automate: {fileID: 0}
 --- !u!1 &1717098798
 GameObject:
   m_ObjectHideFlags: 0
@@ -42750,6 +42787,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnFront: {fileID: 1700412805}
+  s_Automate: {fileID: 0}
 --- !u!1 &1763085092
 GameObject:
   m_ObjectHideFlags: 0
@@ -44960,6 +44998,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnFront: {fileID: 1844403929}
+  s_Automate: {fileID: 0}
 --- !u!1 &1849062110
 GameObject:
   m_ObjectHideFlags: 0
@@ -45173,6 +45212,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnFront: {fileID: 1700412805}
+  s_Automate: {fileID: 0}
 --- !u!1 &1857600651
 GameObject:
   m_ObjectHideFlags: 0
@@ -45734,6 +45774,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnFront: {fileID: 1700412805}
+  s_Automate: {fileID: 0}
 --- !u!1 &1875663953
 GameObject:
   m_ObjectHideFlags: 0
@@ -48003,6 +48044,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnFront: {fileID: 1700412805}
+  s_Automate: {fileID: 0}
 --- !u!1 &1961413708
 GameObject:
   m_ObjectHideFlags: 0
@@ -49331,6 +49373,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnFront: {fileID: 2010692733}
+  s_Automate: {fileID: 0}
 --- !u!1 &2026797124
 GameObject:
   m_ObjectHideFlags: 0
@@ -50580,6 +50623,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnFront: {fileID: 2076436508}
+  s_Automate: {fileID: 0}
 --- !u!1 &2076944558
 GameObject:
   m_ObjectHideFlags: 0
@@ -51215,6 +51259,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnFront: {fileID: 2099085193}
+  s_Automate: {fileID: 0}
 --- !u!65 &2099085196
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -53993,6 +54038,7 @@ GameObject:
   - component: {fileID: 6852744839851610463}
   - component: {fileID: 6852744839851610464}
   - component: {fileID: 7270892995882875688}
+  - component: {fileID: 7270892995882875689}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -54074,7 +54120,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 692df9c340487b54083db403a7594247, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cube: {fileID: 6852744839851610462}
   history: 
+--- !u!114 &7270892995882875689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6852744839851610462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56db75f3a10e2254ca63e0f648fb069d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  s_ReadCube: {fileID: 6852744839851610463}
+  s_CubeState: {fileID: 6852744839851610464}
+  s_Automate: {fileID: 7270892995882875688}
 --- !u!65 &7393738088027037752
 BoxCollider:
   m_ObjectHideFlags: 0

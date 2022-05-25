@@ -17,9 +17,10 @@ using Random = UnityEngine.Random;
         public static List<Move> moveList = new List<Move>() { };
         private S_CubeState s_CubeState;
         private S_ReadCube s_ReadCube;
-        //private S_SolveTwoPhase s_solveTwoPhase;
+        private S_SolveTwoPhase s_solveTwoPhase;
+        private S_Rotation s_Rotation;
+        public GameObject cube;
         public List<Move> history;
-        //public S_mouvement s_Mouvement;
 
         //Liste des mouvements possible du cube
         public enum Move
@@ -37,13 +38,14 @@ using Random = UnityEngine.Random;
         {
             s_CubeState = FindObjectOfType<S_CubeState>();
             s_ReadCube = FindObjectOfType<S_ReadCube>();
-            //s_solveTwoPhase = FindObjectOfType<S_SolveTwoPhase>();
+            s_solveTwoPhase = FindObjectOfType<S_SolveTwoPhase>();
+            s_Rotation = FindObjectOfType<S_Rotation>();
+            
         }
 
         // Update is called once per frame
         void Update()
         {
-
             //Si l'utilisateur appuye sur ces touches, le mélange se lance
             if (Input.GetKeyUp(KeyCode.LeftShift) && Input.GetKeyUp(KeyCode.A))
             {
@@ -56,25 +58,27 @@ using Random = UnityEngine.Random;
             {
                 Debug.Log("On résout !");
                 //méthode de résolution
+                s_solveTwoPhase.Solver();
             }
 
             if (moveList.Count > 0 && !S_CubeState.autoRotating && S_CubeState.started)
             {
+                //Debug.Log("C'est partii");
                 //Faire le mouvement au premier index
                 DoMove(moveList[0]);
 
                 //Annuler le mouvement au premier index
                 moveList.Remove(moveList[0]);
 
-                // // Si on est en mode solve
-                // if (s_solveTwoPhase.solveCount>0)
-                // {
-                //     s_solveTwoPhase.solveCount--;
-                //     if (s_solveTwoPhase.solveCount == 0)
-                //     {
-                //         StartCoroutine(ClearAfterSolve());
-                //     }
-                // }
+                // Si on est en mode solve
+                if (s_solveTwoPhase.solveCount > 0)
+                {
+                    s_solveTwoPhase.solveCount--;
+                    if (s_solveTwoPhase.solveCount == 0)
+                    {
+                        StartCoroutine(ClearAfterSolve());
+                    }
+                }
             }
         }
         IEnumerator ClearAfterSolve()
@@ -89,6 +93,8 @@ using Random = UnityEngine.Random;
         public void Shuffle()
         {
             Debug.Log("Melannnge");
+        cube.transform.eulerAngles = s_Rotation.lastRotation;
+        cube.transform.localPosition = s_Rotation.lastPosition;
             //s_Mouvement.target.transform.SetPositionAndRotation(new Vector3(0, 0, 0), new Quaternion(0, 0, 0, 0));
             StartCoroutine(WaitBeforeShuffle());
         }
@@ -107,9 +113,9 @@ using Random = UnityEngine.Random;
             // Délégué : petite fonction rapide à laquelle on lui fournit un objet (ici List<GameObject>)
             // et retourne ce que l'on veut à partir de cet objet (ici, une propriété float)
             // Appel : xDelegate(liste) -> retourne la propriété "position.x"
-            Func<List<GameObject>, float> xDelegate = x => x[4].transform.parent.transform.position.x;
-            Func<List<GameObject>, float> yDelegate = x => x[4].transform.parent.transform.position.y;
-            Func<List<GameObject>, float> zDelegate = x => x[4].transform.parent.transform.position.z;
+            Func<List<GameObject>, float> xDelegate = x => x[16].transform.position.x;
+            Func<List<GameObject>, float> yDelegate = x => x[16].transform.position.y;
+            Func<List<GameObject>, float> zDelegate = x => x[16].transform.position.z;
 
             List<GameObject> rotatingFace = null;
             Vector3 directionVector = new Vector3 (0,0,0);
@@ -141,42 +147,42 @@ using Random = UnityEngine.Random;
                 case Move.L:
                     rotatingFace = s_CubeState.left;
                     angle = -90;
-                    directionVector = new Vector3(0f, 0f, SetVectorDirection(zDelegate, rotatingFace));
+                    directionVector = new Vector3(SetVectorDirection(xDelegate, rotatingFace), 0f, 0f);
                     break;
                 case Move.LPrime:
                     rotatingFace = s_CubeState.left;
                     angle = 90;
-                    directionVector = new Vector3(0f, 0f, SetVectorDirection(zDelegate, rotatingFace));
+                    directionVector = new Vector3(SetVectorDirection(xDelegate, rotatingFace), 0f, 0f);
                     break;
                 case Move.R:
                     rotatingFace = s_CubeState.right;
                     angle = -90;
-                    directionVector = new Vector3(0f, 0f, SetVectorDirection(zDelegate, rotatingFace));
+                    directionVector = new Vector3(SetVectorDirection(xDelegate, rotatingFace), 0f, 0f);
                     break;
                 case Move.RPrime:
                     rotatingFace = s_CubeState.right;
                     angle = 90;
-                    directionVector = new Vector3(0f, 0f, SetVectorDirection(zDelegate, rotatingFace));
+                    directionVector = new Vector3(SetVectorDirection(xDelegate, rotatingFace), 0f, 0f);
                     break;
                 case Move.F:
                     rotatingFace = s_CubeState.front;
                     angle = -90;
-                    directionVector = new Vector3(SetVectorDirection(xDelegate, rotatingFace), 0f, 0f);
+                    directionVector = new Vector3(0f, 0f, SetVectorDirection(zDelegate, rotatingFace));
                     break;
                 case Move.FPrime:
                     rotatingFace = s_CubeState.front;
                     angle = 90;
-                    directionVector = new Vector3(SetVectorDirection(xDelegate, rotatingFace), 0f, 0f);
+                    directionVector = new Vector3(0f, 0f, SetVectorDirection(zDelegate, rotatingFace));
                     break;
                 case Move.B:
                     rotatingFace = s_CubeState.back;
                     angle = -90;
-                    directionVector = new Vector3(SetVectorDirection(xDelegate, rotatingFace), 0f, 0f);
+                    directionVector = new Vector3(0f, 0f, SetVectorDirection(zDelegate, rotatingFace));
                     break;
                 case Move.BPrime:
                     rotatingFace = s_CubeState.back;
                     angle = 90;
-                    directionVector = new Vector3(SetVectorDirection(xDelegate, rotatingFace), 0f, 0f);
+                    directionVector = new Vector3(0f, 0f, SetVectorDirection(zDelegate, rotatingFace));
                     break;
             }
             RotateSide(rotatingFace, angle, directionVector);            
@@ -191,17 +197,17 @@ using Random = UnityEngine.Random;
         {
             foreach(var sides in side)
             {
-                Debug.Log(side.Count);
+                Debug.Log(side[16].transform.ToString());
             }
+
             //On tourne automatiquement les côtés par les angles
-            S_PivotRotation pr = side[4].transform.parent.GetComponent<S_PivotRotation>();
+            S_PivotRotation pr = side[16].transform.GetComponent<S_PivotRotation>();
             pr.StartAutoRotate(side, angle, localForward);
         }
         
         IEnumerator WaitBeforeShuffle()
         {
-            yield return new WaitForSeconds(0f);
-            //yield return new WaitForSeconds(1.3f);
+            yield return new WaitForSeconds(1.3f);
             List<Move> randomMoves = new List<Move>();
             int shuffleLength = Random.Range(10, 30);
             for (int i = 0; i < shuffleLength; i++)

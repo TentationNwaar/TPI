@@ -40,7 +40,8 @@ public class S_ReadCube : MonoBehaviour
     {
         s_CubeState =  FindObjectOfType<S_CubeState>();
         SetRayTransforms(); 
-        ReadState();          
+        ReadState();
+        S_CubeState.started = true;
     }
 
     // Update is called once per frame

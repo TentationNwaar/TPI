@@ -53,6 +53,7 @@ public class S_PivotRotation : MonoBehaviour
         s_ReadCube = FindObjectOfType<S_ReadCube>();
         s_CubeState = FindObjectOfType<S_CubeState>();
         s_Automate = FindObjectOfType<S_Automate>();
+        //Permet de définir la dernière rotation
         lastRotation = this.transform.localRotation;
     }
 
@@ -146,8 +147,7 @@ public class S_PivotRotation : MonoBehaviour
     {
         dragging = false;
         var step = speed * Time.deltaTime;
-        transform.localRotation = Quaternion.RotateTowards(transform.localRotation, targetQuaternion, step);
-        
+        transform.localRotation = Quaternion.RotateTowards(transform.localRotation, targetQuaternion, step);  
 
         //si on est autour de 1 degrée, on défini l'angle comme étant l'angle ciblé et on termine la rotation
         if (Quaternion.Angle(transform.localRotation, targetQuaternion) <= 1)
