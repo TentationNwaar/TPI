@@ -7,6 +7,7 @@ Description : Script qui permet la rotation du cube
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class S_Rotation : MonoBehaviour
 {
@@ -39,8 +40,6 @@ public class S_Rotation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(cube.transform.eulerAngles);
-
         //Si le clic gauche de la souris est levé, il ne tourne pas
         if (Input.GetMouseButtonUp(0))
         {
@@ -62,6 +61,11 @@ public class S_Rotation : MonoBehaviour
             {
                 s_PauseMenu.Pause();
             }
+        }
+
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
     //Méthode qui vérifie un mouvement en cours
@@ -89,7 +93,6 @@ public class S_Rotation : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
-            //cube.transform.SetPositionAndRotation(new Vector3(0,0,0), Quaternion.Euler(new Vector3(0,90,0)));
             cube.transform.Rotate(0,90,0);
         }
 

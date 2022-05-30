@@ -16,6 +16,7 @@ public class S_SolveTwoPhase : MonoBehaviour
     public S_ReadCube s_ReadCube;
     public S_CubeState s_CubeState;
     public S_Automate s_Automate;
+    public S_Rotation s_Rotation;
     internal int solveCount;
     private bool doOnce = false;
     List<S_Automate.Move> reverse = new List<S_Automate.Move>();
@@ -26,6 +27,7 @@ public class S_SolveTwoPhase : MonoBehaviour
         s_ReadCube = FindObjectOfType<S_ReadCube>();
         s_CubeState = FindObjectOfType<S_CubeState>();
         s_Automate = FindObjectOfType<S_Automate>();
+        s_Rotation = FindObjectOfType<S_Rotation>();
     }
 
     // Update is called once per frame
@@ -37,18 +39,22 @@ public class S_SolveTwoPhase : MonoBehaviour
             Solver();
         }
     }
-
+    /// <summary>
+    /// Méthode pour lancer la résolution
+    /// </summary>
     public void Solver()
     {
-        //s_Automate.s_Mouvement.target.transform.SetPositionAndRotation(new Vector3(0, 0, 0), new Quaternion(0, 0, 0, 0));
+        s_Automate.cube.transform.eulerAngles = s_Rotation.lastRotation;
+        s_Automate.cube.transform.localPosition = s_Rotation.lastPosition;
         StartCoroutine(WaitBeforeSolve());
     }
-
+    /// <summary>
+    /// Permet de résoudre le cube après un laps de temps
+    /// </summary>
+    /// <returns></returns>
     IEnumerator WaitBeforeSolve()
     {
-        yield return new WaitForSeconds(0);
-        Debug.Log("On resouuudede");
-        //yield return new WaitForSeconds(1.3f);
+        yield return new WaitForSeconds(0.5f);
         s_ReadCube.ReadState();
 
         // Récup l'historique et inverser les mouvements
@@ -66,6 +72,11 @@ public class S_SolveTwoPhase : MonoBehaviour
         S_Automate.moveList = reverseMoves;
     }
 
+    /// <summary>
+    /// Liste des mouvements à effectué à l'envers
+    /// </summary>
+    /// <param name="moveToReverse"></param>
+    /// <returns></returns>
     public S_Automate.Move Reverse(S_Automate.Move moveToReverse)
     {
         switch (moveToReverse)

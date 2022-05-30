@@ -3261,7 +3261,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0851b0f2b4f4b6145a59f4fce57a2acf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnFront: {fileID: 119934165}
+  turnCenter: {fileID: 119934165}
   s_Automate: {fileID: 0}
 --- !u!65 &119934168
 BoxCollider:
@@ -5015,7 +5015,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0851b0f2b4f4b6145a59f4fce57a2acf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnFront: {fileID: 185401359}
+  turnCenter: {fileID: 0}
   s_Automate: {fileID: 0}
 --- !u!1 &186473894
 GameObject:
@@ -8282,7 +8282,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0851b0f2b4f4b6145a59f4fce57a2acf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnFront: {fileID: 1700412805}
+  turnCenter: {fileID: 0}
   s_Automate: {fileID: 0}
 --- !u!1 &296912135
 GameObject:
@@ -8400,7 +8400,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0851b0f2b4f4b6145a59f4fce57a2acf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnFront: {fileID: 1700412805}
+  turnCenter: {fileID: 0}
   s_Automate: {fileID: 0}
 --- !u!1 &298487567
 GameObject:
@@ -8880,7 +8880,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0851b0f2b4f4b6145a59f4fce57a2acf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnFront: {fileID: 308178367}
+  turnCenter: {fileID: 0}
   s_Automate: {fileID: 0}
 --- !u!1 &312451106
 GameObject:
@@ -11814,7 +11814,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0851b0f2b4f4b6145a59f4fce57a2acf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnFront: {fileID: 1700412805}
+  turnCenter: {fileID: 0}
   s_Automate: {fileID: 0}
 --- !u!1 &450055851
 GameObject:
@@ -12794,7 +12794,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0851b0f2b4f4b6145a59f4fce57a2acf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnFront: {fileID: 1700412805}
+  turnCenter: {fileID: 0}
   s_Automate: {fileID: 0}
 --- !u!1 &498882659
 GameObject:
@@ -13895,7 +13895,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0851b0f2b4f4b6145a59f4fce57a2acf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnFront: {fileID: 1700412805}
+  turnCenter: {fileID: 0}
   s_Automate: {fileID: 0}
 --- !u!1 &549794166
 GameObject:
@@ -15939,8 +15939,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 665892579}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.15, y: 0.91, z: 5.37}
+  m_LocalRotation: {x: -0.0000003026627, y: -0.000000089285315, z: 0.0000004842603, w: -1}
+  m_LocalPosition: {x: -3.201521, y: 0.83131814, z: 6.2635455}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -17209,7 +17209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0851b0f2b4f4b6145a59f4fce57a2acf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnFront: {fileID: 1700412805}
+  turnCenter: {fileID: 0}
   s_Automate: {fileID: 0}
 --- !u!1 &735573717
 GameObject:
@@ -20324,7 +20324,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0851b0f2b4f4b6145a59f4fce57a2acf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnFront: {fileID: 877022502}
+  turnCenter: {fileID: 877022502}
   s_Automate: {fileID: 0}
 --- !u!65 &877022505
 BoxCollider:
@@ -20546,7 +20546,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0851b0f2b4f4b6145a59f4fce57a2acf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnFront: {fileID: 883353551}
+  turnCenter: {fileID: 883353551}
   s_Automate: {fileID: 0}
 --- !u!1 &885825568
 GameObject:
@@ -22621,7 +22621,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0851b0f2b4f4b6145a59f4fce57a2acf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnFront: {fileID: 1700412805}
+  turnCenter: {fileID: 0}
   s_Automate: {fileID: 0}
 --- !u!1 &973654756
 GameObject:
@@ -23958,7 +23958,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0851b0f2b4f4b6145a59f4fce57a2acf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnFront: {fileID: 1700412805}
+  turnCenter: {fileID: 0}
   s_Automate: {fileID: 0}
 --- !u!1 &1029944708
 GameObject:
@@ -25877,7 +25877,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0851b0f2b4f4b6145a59f4fce57a2acf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnFront: {fileID: 1700412805}
+  turnCenter: {fileID: 0}
   s_Automate: {fileID: 0}
 --- !u!1 &1109144714
 GameObject:
@@ -27781,7 +27781,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0851b0f2b4f4b6145a59f4fce57a2acf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnFront: {fileID: 1700412805}
+  turnCenter: {fileID: 0}
   s_Automate: {fileID: 0}
 --- !u!1 &1204160024
 GameObject:
@@ -29226,7 +29226,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0851b0f2b4f4b6145a59f4fce57a2acf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnFront: {fileID: 1700412805}
+  turnCenter: {fileID: 0}
   s_Automate: {fileID: 0}
 --- !u!1 &1277637547
 GameObject:
@@ -29734,7 +29734,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0851b0f2b4f4b6145a59f4fce57a2acf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnFront: {fileID: 1700412805}
+  turnCenter: {fileID: 0}
   s_Automate: {fileID: 0}
 --- !u!1 &1293456556
 GameObject:
@@ -30710,7 +30710,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0851b0f2b4f4b6145a59f4fce57a2acf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnFront: {fileID: 1700412805}
+  turnCenter: {fileID: 0}
   s_Automate: {fileID: 0}
 --- !u!1 &1315909831
 GameObject:
@@ -31195,7 +31195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0851b0f2b4f4b6145a59f4fce57a2acf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnFront: {fileID: 1700412805}
+  turnCenter: {fileID: 0}
   s_Automate: {fileID: 0}
 --- !u!1 &1331803905
 GameObject:
@@ -31313,7 +31313,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0851b0f2b4f4b6145a59f4fce57a2acf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnFront: {fileID: 1700412805}
+  turnCenter: {fileID: 0}
   s_Automate: {fileID: 0}
 --- !u!1 &1340876038
 GameObject:
@@ -33123,7 +33123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0851b0f2b4f4b6145a59f4fce57a2acf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnFront: {fileID: 1700412805}
+  turnCenter: {fileID: 0}
   s_Automate: {fileID: 0}
 --- !u!1 &1405244588
 GameObject:
@@ -33345,7 +33345,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0851b0f2b4f4b6145a59f4fce57a2acf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnFront: {fileID: 1430483353}
+  turnCenter: {fileID: 1430483353}
   s_Automate: {fileID: 0}
 --- !u!65 &1430483356
 BoxCollider:
@@ -34087,7 +34087,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0851b0f2b4f4b6145a59f4fce57a2acf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnFront: {fileID: 1700412805}
+  turnCenter: {fileID: 0}
   s_Automate: {fileID: 0}
 --- !u!1 &1463238690
 GameObject:
@@ -34792,7 +34792,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0851b0f2b4f4b6145a59f4fce57a2acf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnFront: {fileID: 1700412805}
+  turnCenter: {fileID: 0}
   s_Automate: {fileID: 0}
 --- !u!1 &1482775932
 GameObject:
@@ -35273,7 +35273,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 836, y: 443}
+  m_AnchoredPosition: {x: 836, y: 358}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1504377340
@@ -36413,7 +36413,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0851b0f2b4f4b6145a59f4fce57a2acf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnFront: {fileID: 1700412805}
+  turnCenter: {fileID: 0}
   s_Automate: {fileID: 0}
 --- !u!1 &1533962598
 GameObject:
@@ -37117,11 +37117,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7470856979579443485, guid: ded3a7ddb0e4ca14e81803b876d399ca, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 238.9
+      value: 249
       objectReference: {fileID: 0}
     - target: {fileID: 7470856979579443485, guid: ded3a7ddb0e4ca14e81803b876d399ca, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 183
+      value: 224
       objectReference: {fileID: 0}
     - target: {fileID: 7470856979579443485, guid: ded3a7ddb0e4ca14e81803b876d399ca, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -38961,7 +38961,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0851b0f2b4f4b6145a59f4fce57a2acf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnFront: {fileID: 1618857753}
+  turnCenter: {fileID: 1618857753}
   s_Automate: {fileID: 0}
 --- !u!65 &1618857756
 BoxCollider:
@@ -40054,7 +40054,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0851b0f2b4f4b6145a59f4fce57a2acf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnFront: {fileID: 1700412805}
+  turnCenter: {fileID: 0}
   s_Automate: {fileID: 0}
 --- !u!1 &1646560915
 GameObject:
@@ -41553,7 +41553,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0851b0f2b4f4b6145a59f4fce57a2acf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnFront: {fileID: 1700412805}
+  turnCenter: {fileID: 0}
   s_Automate: {fileID: 0}
 --- !u!1 &1703699328
 GameObject:
@@ -41768,7 +41768,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0851b0f2b4f4b6145a59f4fce57a2acf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnFront: {fileID: 1700412805}
+  turnCenter: {fileID: 0}
   s_Automate: {fileID: 0}
 --- !u!1 &1717098798
 GameObject:
@@ -42786,7 +42786,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0851b0f2b4f4b6145a59f4fce57a2acf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnFront: {fileID: 1700412805}
+  turnCenter: {fileID: 0}
   s_Automate: {fileID: 0}
 --- !u!1 &1763085092
 GameObject:
@@ -44997,7 +44997,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0851b0f2b4f4b6145a59f4fce57a2acf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnFront: {fileID: 1844403929}
+  turnCenter: {fileID: 0}
   s_Automate: {fileID: 0}
 --- !u!1 &1849062110
 GameObject:
@@ -45211,7 +45211,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0851b0f2b4f4b6145a59f4fce57a2acf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnFront: {fileID: 1700412805}
+  turnCenter: {fileID: 0}
   s_Automate: {fileID: 0}
 --- !u!1 &1857600651
 GameObject:
@@ -45773,7 +45773,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0851b0f2b4f4b6145a59f4fce57a2acf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnFront: {fileID: 1700412805}
+  turnCenter: {fileID: 0}
   s_Automate: {fileID: 0}
 --- !u!1 &1875663953
 GameObject:
@@ -48043,7 +48043,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0851b0f2b4f4b6145a59f4fce57a2acf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnFront: {fileID: 1700412805}
+  turnCenter: {fileID: 0}
   s_Automate: {fileID: 0}
 --- !u!1 &1961413708
 GameObject:
@@ -49372,7 +49372,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0851b0f2b4f4b6145a59f4fce57a2acf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnFront: {fileID: 2010692733}
+  turnCenter: {fileID: 0}
   s_Automate: {fileID: 0}
 --- !u!1 &2026797124
 GameObject:
@@ -50622,7 +50622,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0851b0f2b4f4b6145a59f4fce57a2acf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnFront: {fileID: 2076436508}
+  turnCenter: {fileID: 0}
   s_Automate: {fileID: 0}
 --- !u!1 &2076944558
 GameObject:
@@ -51258,7 +51258,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0851b0f2b4f4b6145a59f4fce57a2acf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnFront: {fileID: 2099085193}
+  turnCenter: {fileID: 2099085193}
   s_Automate: {fileID: 0}
 --- !u!65 &2099085196
 BoxCollider:
@@ -51590,11 +51590,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1775987453952751210, guid: 831f58efba105f3419975f1f59419bd2, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 242.6
+      value: 252.69995
       objectReference: {fileID: 0}
     - target: {fileID: 1775987453952751210, guid: 831f58efba105f3419975f1f59419bd2, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 62.5
+      value: 103.5
       objectReference: {fileID: 0}
     - target: {fileID: 1775987453952751210, guid: 831f58efba105f3419975f1f59419bd2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -53501,7 +53501,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -410, y: 230}
+  m_AnchoredPosition: {x: -410, y: 180}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &3044433443632540102
@@ -54137,6 +54137,7 @@ MonoBehaviour:
   s_ReadCube: {fileID: 6852744839851610463}
   s_CubeState: {fileID: 6852744839851610464}
   s_Automate: {fileID: 7270892995882875688}
+  s_Rotation: {fileID: 877232597}
 --- !u!65 &7393738088027037752
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -4,6 +4,7 @@ Date : 19.05.22
 Lieu : ETML
 Description : Script qui permet de gérer le menu
 */
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,10 +14,7 @@ public class S_PivotRotation : MonoBehaviour
     //Côté actif du cube
     private List<GameObject> activeSide;
 
-    //Vecteur permettant de tourner
-    private Vector3 localForward;
-
-    //Position de la souris
+    //Position de départ de la souris
     private Vector3 mouseRef;
 
     //Détermine si le mouvement est en rotation ou non
@@ -37,7 +35,8 @@ public class S_PivotRotation : MonoBehaviour
     //Quaternion ciblé
     private Quaternion targetQuaternion;
 
-    public GameObject turnFront;
+    //Pièce centrale à pivoter
+    public GameObject turnCenter;
 
     //Appel au script mentionné
     private S_ReadCube s_ReadCube;
@@ -58,7 +57,7 @@ public class S_PivotRotation : MonoBehaviour
     }
 
     // Update is called once per frame
-    void LateUpdate()
+    void Update()
     {
         if (dragging && !autoRotating)
         {
@@ -76,6 +75,7 @@ public class S_PivotRotation : MonoBehaviour
         }
     }
 
+    //Méthode pour déterminer l'axe du côté à tourner
     private void SpinSide(List<GameObject> side)
     {
         //reset la rotation
@@ -83,37 +83,36 @@ public class S_PivotRotation : MonoBehaviour
 
         //La position actuelle de la souris - la dernière position
         Vector3 mouseOffset = (Input.mousePosition - mouseRef);
-        float AdditionMouse = mouseOffset.x + mouseOffset.y;
+        float additionMouse = mouseOffset.x + mouseOffset.y;
 
         if (side == s_CubeState.up)
         {
-            rotation.y = (AdditionMouse) * sensitivity * 1;
+            rotation.y = (additionMouse) * sensitivity * 1;
         }
 
         if (side == s_CubeState.down)
         {
-            rotation.y = (AdditionMouse) * sensitivity * -1;
+            rotation.y = (additionMouse) * sensitivity * -1;
         }
 
         if (side == s_CubeState.left)
         {
-            rotation.x = (AdditionMouse) * sensitivity * 1;
+            rotation.x = (additionMouse) * sensitivity * 1;
         }
 
         if (side == s_CubeState.right)
         {
-            rotation.x = (AdditionMouse) * sensitivity * -1;
+            rotation.x = (additionMouse) * sensitivity * -1;
         }
 
         if (side == s_CubeState.front)
-        {
-            //turnFront.transform.localRotation = Quaternion.Euler(0,0,(AdditionMouse) * sensitivity * -1);          
-            rotation.z = (AdditionMouse) * sensitivity * -1;
+        {          
+            rotation.z = (additionMouse) * sensitivity * -1;
         }
 
         if (side == s_CubeState.back)
         {
-            rotation.z = (AdditionMouse) * sensitivity * 1;
+            rotation.z = (additionMouse) * sensitivity * 1;
         }
         
         //Rotation
@@ -121,7 +120,7 @@ public class S_PivotRotation : MonoBehaviour
         mouseRef = Input.mousePosition;
     }
 
-    //Méthode pour faire tourner le côté
+    //Permet de faire tourner le côté
     public void Rotate(List<GameObject> side)
     {
         activeSide = side;
@@ -170,22 +169,14 @@ public class S_PivotRotation : MonoBehaviour
                     //  0 :: 0 == 0
                     // 270
                     // 90
-
-                    //Debug.Log("last : " + Mathf.Round(lastRotation.x));
-                    //Debug.Log("now : " + Mathf.Round(transform.localRotation.x));
-
                     float lastAngle = Mathf.Round(lastRotation.eulerAngles.z/90) * 90 ;
-                    //Debug.Log("last : " + Mathf.Round(lastRotation.x));
-
-                    Debug.Log(Mathf.Round(lastRotation.eulerAngles.z));
-
-                    if (lastAngle == 0 && Mathf.Round(lastRotation.z)==-1)
+                    if (lastAngle == 0 && Math.Abs(Mathf.Round(lastRotation.z))== 1)
                     {   
                         lastAngle = 180;          
                     }
 
                     float newAngle = Mathf.Round(transform.localEulerAngles.z/90) * 90;
-                    if (newAngle== 0 && Mathf.Round(transform.localRotation.z)==-1)
+                    if (newAngle== 0 && Math.Abs(Mathf.Round(transform.localRotation.z))==1)
                     {
                         newAngle = 180;
                     }
@@ -209,20 +200,20 @@ public class S_PivotRotation : MonoBehaviour
                 {
                     //move BPrime ou BPrime BPrime
                     float lastAngle = Mathf.Round(lastRotation.eulerAngles.z / 90) * 90;
-                    if (lastAngle == 0 && Mathf.Round(lastRotation.x) == -1)
+                    if (lastAngle == 0 && Math.Abs(Mathf.Round(lastRotation.x)) == 1)
                     {
                         lastAngle = 180;
                     }
 
                     float newAngle = Mathf.Round(transform.localEulerAngles.z / 90) * 90;
-                    if (newAngle == 0 && Mathf.Round(transform.localRotation.z) == -1)
+                    if (newAngle == 0 && Math.Abs(Mathf.Round(transform.localRotation.z)) == 1)
                     {
                         newAngle = 180;
                     }
 
                     if (lastAngle + 90 == newAngle || (lastAngle + 90 == 360 && newAngle == 0))
                     {
-                        s_Automate.AddToHistory(S_Automate.Move.B);
+                        s_Automate.AddToHistory(S_Automate.Move.BPrime);
                     }
                     if (lastAngle + 180 == newAngle || (lastAngle + 180 == 360 && newAngle == 0) || (lastAngle + 180 == 450 && newAngle == 90) || lastAngle - 180 == newAngle || (lastAngle - 180 == -90 && newAngle == 270) || (lastAngle - 180 == -180 && newAngle == 180))
                     {
@@ -231,7 +222,7 @@ public class S_PivotRotation : MonoBehaviour
                     }
                     if (lastAngle - 90 == newAngle || (lastAngle - 90 == -90 && newAngle == 270))
                     {
-                        s_Automate.AddToHistory(S_Automate.Move.BPrime);
+                        s_Automate.AddToHistory(S_Automate.Move.B);
                     }
                 }
 
@@ -240,13 +231,13 @@ public class S_PivotRotation : MonoBehaviour
                     //move U ou U U
 
                     float lastAngle = Mathf.Round(lastRotation.eulerAngles.y/90) * 90 ;
-                    if (lastAngle == 0 && Mathf.Round(lastRotation.y)==-1)
+                    if (lastAngle == 0 && Math.Abs(Mathf.Round(lastRotation.y))==1)
                     {   
                         lastAngle = 180;
                     }
 
                     float newAngle = Mathf.Round(transform.localEulerAngles.y/90) * 90;
-                    if (newAngle== 0 && Mathf.Round(transform.localRotation.y)==-1)
+                    if (newAngle== 0 && Math.Abs(Mathf.Round(transform.localRotation.y))==1)
                     {
                         newAngle = 180;
                     }
@@ -271,13 +262,13 @@ public class S_PivotRotation : MonoBehaviour
                     //move D ou DPrime
 
                     float lastAngle = Mathf.Round(lastRotation.eulerAngles.y / 90) * 90;
-                    if (lastAngle == 0 && Mathf.Round(lastRotation.y) == -1)
+                    if (lastAngle == 0 && Math.Abs(Mathf.Round(lastRotation.y)) == 1)
                     {
                         lastAngle = 180;
                     }
 
                     float newAngle = Mathf.Round(transform.localEulerAngles.y / 90) * 90;
-                    if (newAngle == 0 && Mathf.Round(transform.localRotation.y) == -1)
+                    if (newAngle == 0 && Math.Abs(Mathf.Round(transform.localRotation.y)) == 1)
                     {
                         newAngle = 180;
                     }
@@ -299,17 +290,24 @@ public class S_PivotRotation : MonoBehaviour
 
                 if (transform.gameObject.name == "LCenter")
                 {
+                    //if (gameObject.transform.localRotation.eulerAngles.x == 90)
+                    //{
+                    //    s_Automate.AddToHistory(S_Automate.Move.L);
+                    //}
+
                     float lastAngle = Mathf.Round(lastRotation.eulerAngles.x / 90) * 90;
-                    if (lastAngle == 0 && Mathf.Round(lastRotation.x) == -1)
+                    if (lastAngle == 0 && Math.Abs(Mathf.Round(lastRotation.x)) == 1)
                     {
                         lastAngle = 180;
                     }
 
                     float newAngle = Mathf.Round(transform.localEulerAngles.x / 90) * 90;
-                    if (newAngle == 0 && Mathf.Round(transform.localRotation.x) == -1)
+                    if (newAngle == 0 && Math.Abs(Mathf.Round(transform.localRotation.x)) == 1)
                     {
                         newAngle = 180;
                     }
+
+                    //Debug.Log(lastAngle + " : : " + newAngle);
 
                     if (lastAngle + 90 == newAngle || (lastAngle + 90 == 360 && newAngle == 0))
                     {
@@ -331,23 +329,23 @@ public class S_PivotRotation : MonoBehaviour
                     //move RPrime ou RPrimeRPrime
 
                     float lastAngle = Mathf.Round(lastRotation.eulerAngles.x / 90) * 90;
-                    if (lastAngle == 0 && Mathf.Round(lastRotation.x) == -1)
+                    if (lastAngle == 0 && Math.Abs(Mathf.Round(lastRotation.x)) == 1)
                     {
                         lastAngle = 180;
                     }
 
                     float newAngle = Mathf.Round(transform.localEulerAngles.x / 90) * 90;
-                    if (newAngle == 0 && Mathf.Round(transform.localRotation.x) == -1)
+                    if (newAngle == 0 && Math.Abs(Mathf.Round(transform.localRotation.x)) == 1)
                     {
                         newAngle = 180;
                     }
 
-                    Debug.Log(lastAngle + " : : " + newAngle);
+                    //Debug.Log(lastAngle + " : : " + newAngle);
 
                     // 0 90 180 270
                     // 270 180 90 0
 
-                    if (lastAngle + 90 == newAngle || (lastAngle + 90 == 360 && newAngle == 0))
+                    if (lastAngle + 90 == newAngle || (lastAngle + 90 == 360 && newAngle == 0) )
                     {
                         s_Automate.AddToHistory(S_Automate.Move.RPrime);
                     }
@@ -375,6 +373,4 @@ public class S_PivotRotation : MonoBehaviour
         activeSide = side;
         autoRotating = true;
     }
-
-
 }

@@ -49,14 +49,14 @@ using Random = UnityEngine.Random;
             //Si l'utilisateur appuye sur ces touches, le mélange se lance
             if (Input.GetKeyUp(KeyCode.LeftShift) && Input.GetKeyUp(KeyCode.A))
             {
-                Debug.Log("OKK");
+                Debug.Log("Raccourci mélange");
                 //méthode de mélange
                 Shuffle();
             }
 
             if(Input.GetKeyUp(KeyCode.LeftShift) && Input.GetKeyUp(KeyCode.R))
             {
-                Debug.Log("On résout !");
+                Debug.Log("Raccourci résolution");
                 //méthode de résolution
                 s_solveTwoPhase.Solver();
             }
@@ -92,10 +92,8 @@ using Random = UnityEngine.Random;
 
         public void Shuffle()
         {
-            Debug.Log("Melannnge");
-        cube.transform.eulerAngles = s_Rotation.lastRotation;
-        cube.transform.localPosition = s_Rotation.lastPosition;
-            //s_Mouvement.target.transform.SetPositionAndRotation(new Vector3(0, 0, 0), new Quaternion(0, 0, 0, 0));
+            cube.transform.eulerAngles = s_Rotation.lastRotation;
+            cube.transform.localPosition = s_Rotation.lastPosition;
             StartCoroutine(WaitBeforeShuffle());
         }
 
@@ -195,11 +193,6 @@ using Random = UnityEngine.Random;
 
         void RotateSide(List<GameObject> side, float angle, Vector3 localForward)
         {
-            foreach(var sides in side)
-            {
-                Debug.Log(side[16].transform.ToString());
-            }
-
             //On tourne automatiquement les côtés par les angles
             S_PivotRotation pr = side[16].transform.GetComponent<S_PivotRotation>();
             pr.StartAutoRotate(side, angle, localForward);
@@ -207,7 +200,7 @@ using Random = UnityEngine.Random;
         
         IEnumerator WaitBeforeShuffle()
         {
-            yield return new WaitForSeconds(1.3f);
+            yield return new WaitForSeconds(0.5f);
             List<Move> randomMoves = new List<Move>();
             int shuffleLength = Random.Range(10, 30);
             for (int i = 0; i < shuffleLength; i++)
