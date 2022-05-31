@@ -1,6 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - S_Automate
     - S_CameraZoom
     - S_ChangeColor
     - S_CubeMap
@@ -10,6 +11,7 @@ ScriptsOnlyBuild:
     - S_ReadCube
     - S_Rotation
     - S_SelectFace
+    - S_SolveTwoPhase
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro.dll:
@@ -27,6 +29,7 @@ ScriptsOnlyBuild:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.EventTrigger
     - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
@@ -58,8 +61,19 @@ ScriptsOnlyBuild:
     UnityEngine.UI:
     - UnityEngine.EventSystems.EventTrigger/Entry
     - UnityEngine.EventSystems.EventTrigger/TriggerEvent
+    - UnityEngine.UI.AnimationTriggers
+    - UnityEngine.UI.Button/ButtonClickedEvent
+    - UnityEngine.UI.ColorBlock
     - UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
+    - UnityEngine.UI.Navigation
+    - UnityEngine.UI.SpriteState
   methodsToPreserve:
+  - assembly: Assembly-CSharp
+    fullTypeName: S_Automate
+    methodName: Shuffle
+  - assembly: Assembly-CSharp
+    fullTypeName: S_SolveTwoPhase
+    methodName: Solver
   - assembly: Assembly-CSharp
     fullTypeName: S_ChangeColor
     methodName: StandardColor
@@ -69,6 +83,9 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: S_ChangeColor
     methodName: Return
+  - assembly: Assembly-CSharp
+    fullTypeName: S_Rotation
+    methodName: ResetGame
   - assembly: Assembly-CSharp
     fullTypeName: S_PauseMenu
     methodName: ChangeColor
@@ -122,41 +139,47 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1836}
     - Class: 114
-      Script: {instanceID: 2146}
+      Script: {instanceID: 1930}
     - Class: 114
-      Script: {instanceID: 2482}
+      Script: {instanceID: 2148}
     - Class: 114
-      Script: {instanceID: 2600}
+      Script: {instanceID: 2484}
     - Class: 114
-      Script: {instanceID: 2648}
+      Script: {instanceID: 2602}
     - Class: 114
-      Script: {instanceID: 2662}
+      Script: {instanceID: 2650}
     - Class: 114
-      Script: {instanceID: 2712}
+      Script: {instanceID: 2664}
     - Class: 114
-      Script: {instanceID: 2794}
+      Script: {instanceID: 2714}
     - Class: 114
-      Script: {instanceID: 3008}
+      Script: {instanceID: 2796}
     - Class: 114
-      Script: {instanceID: 3476}
+      Script: {instanceID: 3010}
     - Class: 114
-      Script: {instanceID: 3502}
+      Script: {instanceID: 3108}
     - Class: 114
-      Script: {instanceID: 3604}
+      Script: {instanceID: 3140}
     - Class: 114
-      Script: {instanceID: 3696}
+      Script: {instanceID: 3480}
     - Class: 114
-      Script: {instanceID: 4050}
+      Script: {instanceID: 3506}
     - Class: 114
-      Script: {instanceID: 4166}
+      Script: {instanceID: 3608}
     - Class: 114
-      Script: {instanceID: 4168}
+      Script: {instanceID: 3700}
     - Class: 114
-      Script: {instanceID: 4448}
+      Script: {instanceID: 4054}
     - Class: 114
-      Script: {instanceID: 4914}
+      Script: {instanceID: 4170}
     - Class: 114
-      Script: {instanceID: 4958}
+      Script: {instanceID: 4172}
+    - Class: 114
+      Script: {instanceID: 4452}
+    - Class: 114
+      Script: {instanceID: 4918}
+    - Class: 114
+      Script: {instanceID: 4962}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -282,6 +305,12 @@ ScriptsOnlyBuild:
     className: SimpleScript
   - hash:
       serializedVersion: 2
+      Hash: f206ee40d9186076325b3475a1bc902b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: S_SolveTwoPhase
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro
@@ -384,7 +413,7 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
-      Hash: a1dc19d029a479daf450e56149879b68
+      Hash: f0ab88cb19516a925fbc29755b0e5f1d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: S_ReadCube
@@ -496,6 +525,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: ToggleGroup
+  - hash:
+      serializedVersion: 2
+      Hash: 1dc7ca0ed8599701c9f6991908e2b1fd
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: S_Automate
   - hash:
       serializedVersion: 2
       Hash: 4fd8bf02e3089425d3502e26c44ba31a
@@ -858,7 +893,7 @@ ScriptsOnlyBuild:
     className: TMP_TextEventCheck
   - hash:
       serializedVersion: 2
-      Hash: 7bca2b7a50a17cdbca8d513bfa614936
+      Hash: 5ce0be9fc1ab7b22cf93aa154d332069
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: S_PivotRotation

@@ -7,12 +7,11 @@ Description : Script qui permet de résoudre le rubik's cube et de le mélanger
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine.SceneManagement;
 using UnityEngine;
-using System.Linq;
+using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
 
-    public class S_Automate : MonoBehaviour
+public class S_Automate : MonoBehaviour
     {
         public static List<Move> moveList = new List<Move>() { };
         private S_CubeState s_CubeState;
@@ -40,7 +39,6 @@ using Random = UnityEngine.Random;
             s_ReadCube = FindObjectOfType<S_ReadCube>();
             s_solveTwoPhase = FindObjectOfType<S_SolveTwoPhase>();
             s_Rotation = FindObjectOfType<S_Rotation>();
-            
         }
 
         // Update is called once per frame

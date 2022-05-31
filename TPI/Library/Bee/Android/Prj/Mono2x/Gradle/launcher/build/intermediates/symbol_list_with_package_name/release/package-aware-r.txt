@@ -1,4 +1,4 @@
-com.DefaultCompany.TPI
+com.TPI.TPI
 id unitySurfaceView
 mipmap app_icon
 mipmap app_icon_round

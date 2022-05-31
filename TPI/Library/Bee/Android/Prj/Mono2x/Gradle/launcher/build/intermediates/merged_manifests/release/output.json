@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "applicationId": "com.DefaultCompany.TPI",
+  "applicationId": "com.TPI.TPI",
   "variantType": "BASE_APK",
   "elements": [
     {
@@ -19,7 +19,7 @@
       },
       "path": "AndroidManifest.xml",
       "properties": {
-        "packageId": "com.DefaultCompany.TPI",
+        "packageId": "com.TPI.TPI",
         "split": "",
         "minSdkVersion": "22"
       }

@@ -1,4 +1,4 @@
-#Fri May 20 15:34:52 CEST 2022
+#Tue May 31 08:35:10 CEST 2022
 base.0=C\:\\Users\\po18ter\\Documents\\GitHub\\TPI\\TPI\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

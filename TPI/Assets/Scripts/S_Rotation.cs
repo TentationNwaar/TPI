@@ -65,7 +65,7 @@ public class S_Rotation : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.P))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            ResetGame();
         }
     }
     //Méthode qui vérifie un mouvement en cours
@@ -110,5 +110,14 @@ public class S_Rotation : MonoBehaviour
         {
             cube.transform.Rotate(-90,0,0);
         }
+    }
+
+    public void ResetGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+    public void RightClick()
+    {
+        Input.GetMouseButtonDown(1);
     }
 }

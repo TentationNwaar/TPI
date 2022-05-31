@@ -5,7 +5,6 @@ Lieu : ETML
 Description : Script qui permet de gérer le menu
 */
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -165,10 +164,6 @@ public class S_PivotRotation : MonoBehaviour
             {
                 if (transform.gameObject.name == "FCenter")
                 {
-                    // | 1 | :: 0 == 180
-                    //  0 :: 0 == 0
-                    // 270
-                    // 90
                     float lastAngle = Mathf.Round(lastRotation.eulerAngles.z/90) * 90 ;
                     if (lastAngle == 0 && Math.Abs(Mathf.Round(lastRotation.z))== 1)
                     {   
@@ -290,11 +285,6 @@ public class S_PivotRotation : MonoBehaviour
 
                 if (transform.gameObject.name == "LCenter")
                 {
-                    //if (gameObject.transform.localRotation.eulerAngles.x == 90)
-                    //{
-                    //    s_Automate.AddToHistory(S_Automate.Move.L);
-                    //}
-
                     float lastAngle = Mathf.Round(lastRotation.eulerAngles.x / 90) * 90;
                     if (lastAngle == 0 && Math.Abs(Mathf.Round(lastRotation.x)) == 1)
                     {

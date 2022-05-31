@@ -4,7 +4,7 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "com.DefaultCompany.TPI",
+  "applicationId": "com.TPI.TPI",
   "variantName": "release",
   "elements": [
     {
