@@ -28,6 +28,8 @@ public class S_Rotation : MonoBehaviour
     //On fait appel au script du menu pour le gérer
     public S_PauseMenu s_PauseMenu;
 
+    public S_Automate s_Automate;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,6 +37,11 @@ public class S_Rotation : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         lastRotation = cube.transform.eulerAngles;
         lastPosition = cube.transform.localPosition;
+
+        //Résout le bug du cube qui se déplace seul
+        Input.GetMouseButtonDown(0);
+
+        s_Automate = FindObjectOfType<S_Automate>();
     }
 
     // Update is called once per frame
@@ -78,7 +85,7 @@ public class S_Rotation : MonoBehaviour
     void FixedUpdate()
     {
         //Si on bouge, on enlève les restrictions
-        if (dragging)
+        if (dragging && !s_Automate.isShuffuling)
         {
             rb.constraints = RigidbodyConstraints.None;
             //On utilise les axe d'unity XY pour faire tourner le cube en fonction 

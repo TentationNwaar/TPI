@@ -20,13 +20,13 @@ public class S_PivotRotation : MonoBehaviour
     private bool dragging = false;
 
     //Détermine si il faut ajuster automatiquement la rotation ou non
-    private bool autoRotating = false;
+    internal bool autoRotating = false;
 
     //Sensibilité du cube
     private float sensitivity = 0.3f;
 
     //Vitesse de rotation
-    private float speed = 200f;
+    public float speed = 200f;
 
     //Vecteur de rotation
     private Vector3 rotation;
@@ -74,7 +74,10 @@ public class S_PivotRotation : MonoBehaviour
         }
     }
 
-    //Méthode pour déterminer l'axe du côté à tourner
+    /// <summary>
+    /// Méthode pour déterminer l'axe du côté à tourner
+    /// </summary>
+    /// <param name="side"></param>
     private void SpinSide(List<GameObject> side)
     {
         //reset la rotation
@@ -119,7 +122,10 @@ public class S_PivotRotation : MonoBehaviour
         mouseRef = Input.mousePosition;
     }
 
-    //Permet de faire tourner le côté
+    /// <summary>
+    /// Permet de faire tourner le côté
+    /// </summary>
+    /// <param name="side"></param>
     public void Rotate(List<GameObject> side)
     {
         activeSide = side;
@@ -127,7 +133,9 @@ public class S_PivotRotation : MonoBehaviour
         dragging = true;
     }
 
-    //Ajuste l'angle de rotation
+    /// <summary>
+    /// Ajuste l'angle de rotation
+    /// </summary>
     public void RotateToRightAngle()
     {
         Vector3 vec = transform.localEulerAngles;
@@ -140,7 +148,10 @@ public class S_PivotRotation : MonoBehaviour
         targetQuaternion.eulerAngles = vec;
         autoRotating = true;
     }
-    // C'est le petit mouvement qui termine le mouvement manuel
+
+    /// <summary>
+    /// C'est le petit mouvement qui termine le mouvement manuel
+    /// </summary>
     private void AutoRotate()
     {
         dragging = false;
@@ -355,12 +366,26 @@ public class S_PivotRotation : MonoBehaviour
         }
     }
 
-    // Mouvement quand c'est automatique seulement
+    /// <summary>
+    /// Mouvement quand c'est automatique seulement
+    /// </summary>
+    /// <param name="side"></param>
+    /// <param name="angle"></param>
+    /// <param name="localForward"></param>
     public void StartAutoRotate(List<GameObject> side, float angle, Vector3 localForward)
     {
         s_CubeState.Pickup(side);
         targetQuaternion = Quaternion.AngleAxis(angle, localForward) * transform.rotation;
         activeSide = side;
         autoRotating = true;
+    }
+
+    /// <summary>
+    /// Méthode qui gère la vitesse avec le slider
+    /// </summary>
+    /// <param name="newSpeed"></param>
+    public void AdjustSpeed(float newSpeed)
+    {
+        speed = newSpeed;
     }
 }
