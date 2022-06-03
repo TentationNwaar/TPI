@@ -46,6 +46,7 @@ public class S_SolveTwoPhase : MonoBehaviour
     {
         s_Automate.cube.transform.eulerAngles = s_Rotation.lastRotation;
         s_Automate.cube.transform.localPosition = s_Rotation.lastPosition;
+        s_Automate.isSolving = true;
         StartCoroutine(WaitBeforeSolve());
     }
     /// <summary>

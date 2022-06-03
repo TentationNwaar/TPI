@@ -10178,7 +10178,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 483702957}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.03, y: 3.23, z: 9.18}
+  m_LocalPosition: {x: -2.03, y: 5.15, z: 9.18}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12312,7 +12312,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 605171122}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.56, y: 0.93, z: 8.229}
+  m_LocalPosition: {x: 2.357, y: 0.93, z: 8.229}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13225,7 +13225,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 665892579}
   m_LocalRotation: {x: -0.0000003026627, y: -0.000000089285315, z: 0.0000004842603, w: -1}
-  m_LocalPosition: {x: -3.201521, y: 0.83131814, z: 6.2635455}
+  m_LocalPosition: {x: -3.201521, y: 0.83131814, z: 3.45}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -14613,7 +14613,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 737115966}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.78, y: -2.275, z: 9.254}
+  m_LocalPosition: {x: -3.12, y: -5.32, z: 9.26}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -17682,6 +17682,7 @@ MonoBehaviour:
   rotationSpeed: 100
   cube: {fileID: 6852744839851610462}
   s_PauseMenu: {fileID: 1717098800}
+  s_Automate: {fileID: 0}
 --- !u!54 &877232598
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -21006,7 +21007,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1063017453}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.87, y: 0.93, z: 9.23}
+  m_LocalPosition: {x: -8.47, y: 0.93, z: 9.23}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -26784,7 +26785,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1355580675}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.04, y: 0.9, z: 12.24}
+  m_LocalPosition: {x: -2.04, y: 0.9, z: 12.59}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -45125,6 +45126,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cube: {fileID: 6852744839851610462}
   history: 
+  isShuffuling: 0
+  isSolving: 0
 --- !u!114 &7270892995882875689
 MonoBehaviour:
   m_ObjectHideFlags: 0

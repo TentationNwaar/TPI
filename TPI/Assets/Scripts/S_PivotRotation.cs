@@ -63,7 +63,6 @@ public class S_PivotRotation : MonoBehaviour
             SpinSide(activeSide);
             if (Input.GetMouseButtonUp(1))
             {
-                dragging = false;
                 RotateToRightAngle();
             }
         }

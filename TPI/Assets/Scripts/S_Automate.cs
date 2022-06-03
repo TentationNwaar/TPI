@@ -21,6 +21,7 @@ public class S_Automate : MonoBehaviour
     public GameObject cube;
     public List<Move> history;
     public bool isShuffuling = false;
+    public bool isSolving = false;
     int shuffleLength = 0;
 
     //Liste des mouvements possible du cube
@@ -84,8 +85,7 @@ public class S_Automate : MonoBehaviour
         {
             if (history.Count == shuffleLength)
             {
-                isShuffuling = false;
-                
+                isShuffuling = false;             
             }
         } 
     }

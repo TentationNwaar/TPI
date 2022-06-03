@@ -1,361 +1,363 @@
 { "pid": 0, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "BeeDriver" } },
 { "pid": 0, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-2" } },
 { "pid": 0, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
-{ "pid": 0, "tid": 1, "ts": 1653980887860928, "dur": 922337203685477580, "ph": "X", "name": "Build ScriptAssemblies", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1653980887862687, "dur": 45354, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1653980887908466, "dur": 1477128, "ph": "X", "name": "Run Backend", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1653980889385626, "dur": 9923, "ph": "X", "name": "Finish", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1653980894076870, "dur": 922337203685477580, "ph": "X", "name": "Build Player", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1653980894077217, "dur": 5876, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1653980894083098, "dur": 601850, "ph": "X", "name": "Run Backend", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1653980894684950, "dur": 8167, "ph": "X", "name": "Finish", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1653980894695369, "dur": 165, "ph": "X", "name": "", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1654247672779708, "dur": 922337203685477580, "ph": "X", "name": "Build ScriptAssemblies", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1654247672781933, "dur": 45069, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1654247672827306, "dur": 153674, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1654247672981037, "dur": 408798, "ph": "X", "name": "BuildProgram", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1654247673389838, "dur": 717849, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1654247674107717, "dur": 10357, "ph": "X", "name": "Finish", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1654247678845911, "dur": 922337203685477580, "ph": "X", "name": "Build Player", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1654247678846268, "dur": 6532, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1654247678852803, "dur": 325923, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1654247679178730, "dur": 3239, "ph": "X", "name": "Finish", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1654247679182814, "dur": 61, "ph": "X", "name": "", "args": {} },
 { "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
-,{ "pid":12345, "tid":0, "ts":1653980894155014, "dur":2950, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1653980894157981, "dur":696, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
-,{ "pid":12345, "tid":0, "ts":1653980894158724, "dur":50, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
-,{ "pid":12345, "tid":0, "ts":1653980894158776, "dur":718, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
-,{ "pid":12345, "tid":0, "ts":1653980894159539, "dur":931, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1653980894160471, "dur":1, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1653980894626011, "dur":410, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1653980894626421, "dur":30, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1653980894626451, "dur":4, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1653980894626455, "dur":20, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1653980894626475, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1653980894626478, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1653980894626485, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1653980894626487, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1653980894626494, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1653980894626497, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1653980894626503, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1653980894626506, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1653980894626512, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1653980894626515, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1653980894626521, "dur":4, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1653980894626525, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1653980894626532, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1653980894626545, "dur":2, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1653980894626589, "dur":7945, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
-,{ "pid":12345, "tid":1, "ts":1653980894160033, "dur":457, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1653980894160497, "dur":6097, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1653980894166629, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
-,{ "pid":12345, "tid":1, "ts":1653980894166631, "dur":76, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1653980894166713, "dur":3, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/app.info" }}
-,{ "pid":12345, "tid":1, "ts":1653980894166716, "dur":112, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1653980894166829, "dur":93, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":1, "ts":1653980894166922, "dur":59, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1653980894166982, "dur":182, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
-,{ "pid":12345, "tid":1, "ts":1653980894167164, "dur":57, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1653980894167222, "dur":20954, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.VehiclesModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1653980894188177, "dur":90, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1653980894188269, "dur":99416, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1653980894287686, "dur":76, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1653980894287764, "dur":27558, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.SubstanceModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1653980894315323, "dur":78, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1653980894315403, "dur":4038, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1653980894319442, "dur":74, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1653980894319519, "dur":20445, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1653980894339965, "dur":65, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1653980894340032, "dur":48983, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1653980894389016, "dur":60, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1653980894389078, "dur":25416, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.dll" }}
-,{ "pid":12345, "tid":1, "ts":1653980894414494, "dur":83, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1653980894414579, "dur":29468, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1653980894444048, "dur":82, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1653980894444133, "dur":76374, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":1, "ts":1653980894520508, "dur":59, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1653980894520568, "dur":105442, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1653980894160246, "dur":305, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1653980894160551, "dur":6072, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1653980894166629, "dur":110, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
-,{ "pid":12345, "tid":2, "ts":1653980894166739, "dur":92, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1653980894166832, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":2, "ts":1653980894166909, "dur":77, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1653980894166987, "dur":89, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
-,{ "pid":12345, "tid":2, "ts":1653980894167077, "dur":85, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1653980894167163, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1653980894167227, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1653980894167295, "dur":20886, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1653980894188182, "dur":94, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1653980894188278, "dur":21300, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1653980894209579, "dur":71, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1653980894209652, "dur":17466, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.UmbraModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1653980894227119, "dur":79, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1653980894227201, "dur":17361, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.TLSModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1653980894244563, "dur":64, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1653980894244628, "dur":35519, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1653980894280148, "dur":77, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1653980894280227, "dur":32724, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1653980894312952, "dur":54, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1653980894313007, "dur":19914, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1653980894332922, "dur":96, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1653980894333021, "dur":36076, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.PhysicsModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1653980894369098, "dur":62, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1653980894369161, "dur":19207, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1653980894388369, "dur":77, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1653980894388448, "dur":52002, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.GameCenterModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1653980894440451, "dur":80, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1653980894440533, "dur":22536, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1653980894463070, "dur":77, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1653980894463149, "dur":1032, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
-,{ "pid":12345, "tid":2, "ts":1653980894464182, "dur":100, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1653980894464284, "dur":28149, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/Unity.Services.Core.Registration.dll" }}
-,{ "pid":12345, "tid":2, "ts":1653980894492434, "dur":66, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1653980894492502, "dur":722, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/Unity.Services.Core.Device.dll" }}
-,{ "pid":12345, "tid":2, "ts":1653980894493225, "dur":71, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1653980894493298, "dur":26563, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/Unity.Services.Core.Configuration.dll" }}
-,{ "pid":12345, "tid":2, "ts":1653980894519862, "dur":75, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1653980894519940, "dur":106057, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1653980894160054, "dur":451, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1653980894160506, "dur":6109, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1653980894166627, "dur":148, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
-,{ "pid":12345, "tid":3, "ts":1653980894166775, "dur":264, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1653980894167040, "dur":125, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI.exe" }}
-,{ "pid":12345, "tid":3, "ts":1653980894167165, "dur":58, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1653980894167223, "dur":36225, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1653980894203450, "dur":84, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1653980894203536, "dur":20081, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1653980894223617, "dur":81, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1653980894223700, "dur":48666, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1653980894272367, "dur":78, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1653980894272447, "dur":41604, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1653980894314052, "dur":73, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1653980894314127, "dur":32529, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1653980894346656, "dur":65, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1653980894346722, "dur":21903, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1653980894368626, "dur":80, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1653980894368709, "dur":105151, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.IMGUIModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1653980894473861, "dur":91, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1653980894473954, "dur":1676, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
-,{ "pid":12345, "tid":3, "ts":1653980894475631, "dur":65, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1653980894475697, "dur":20065, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/Unity.Services.Core.Environments.dll" }}
-,{ "pid":12345, "tid":3, "ts":1653980894495763, "dur":87, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1653980894495852, "dur":2473, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/Unity.Services.Core.Analytics.dll" }}
-,{ "pid":12345, "tid":3, "ts":1653980894498326, "dur":80, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1653980894498409, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/System.Xml.Linq.dll" }}
-,{ "pid":12345, "tid":3, "ts":1653980894498480, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1653980894498521, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/System.Xml.dll" }}
-,{ "pid":12345, "tid":3, "ts":1653980894498565, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1653980894498608, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/System.Transactions.dll" }}
-,{ "pid":12345, "tid":3, "ts":1653980894498652, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1653980894498695, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/System.ServiceModel.Internals.dll" }}
-,{ "pid":12345, "tid":3, "ts":1653980894498737, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1653980894498779, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/System.Security.dll" }}
-,{ "pid":12345, "tid":3, "ts":1653980894498822, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1653980894498864, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/System.Runtime.Serialization.dll" }}
-,{ "pid":12345, "tid":3, "ts":1653980894498911, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1653980894498953, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/System.Numerics.dll" }}
-,{ "pid":12345, "tid":3, "ts":1653980894498995, "dur":36, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1653980894499032, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/System.Net.Http.dll" }}
-,{ "pid":12345, "tid":3, "ts":1653980894499069, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1653980894499108, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/System.IO.Compression.FileSystem.dll" }}
-,{ "pid":12345, "tid":3, "ts":1653980894499153, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1653980894499194, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/System.IO.Compression.dll" }}
-,{ "pid":12345, "tid":3, "ts":1653980894499232, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1653980894499280, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/System.EnterpriseServices.dll" }}
-,{ "pid":12345, "tid":3, "ts":1653980894499320, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1653980894499361, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/System.Drawing.dll" }}
-,{ "pid":12345, "tid":3, "ts":1653980894499416, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1653980894499457, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/System.dll" }}
-,{ "pid":12345, "tid":3, "ts":1653980894499493, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1653980894499562, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/System.Data.dll" }}
-,{ "pid":12345, "tid":3, "ts":1653980894499618, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1653980894499660, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/System.Data.DataSetExtensions.dll" }}
-,{ "pid":12345, "tid":3, "ts":1653980894499699, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1653980894499739, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/System.Core.dll" }}
-,{ "pid":12345, "tid":3, "ts":1653980894499780, "dur":34, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1653980894499815, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/System.Configuration.dll" }}
-,{ "pid":12345, "tid":3, "ts":1653980894499851, "dur":36, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1653980894499888, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/System.ComponentModel.Composition.dll" }}
-,{ "pid":12345, "tid":3, "ts":1653980894499927, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1653980894499971, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/Newtonsoft.Json.dll" }}
-,{ "pid":12345, "tid":3, "ts":1653980894500014, "dur":37, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1653980894500052, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/netstandard.dll" }}
-,{ "pid":12345, "tid":3, "ts":1653980894500095, "dur":37, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1653980894500133, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/mscorlib.dll" }}
-,{ "pid":12345, "tid":3, "ts":1653980894500178, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1653980894500217, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/Mono.Security.dll" }}
-,{ "pid":12345, "tid":3, "ts":1653980894500258, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1653980894500297, "dur":93893, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":3, "ts":1653980894594196, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1653980894594268, "dur":824, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":3, "ts":1653980894595126, "dur":30889, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1653980894160195, "dur":343, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1653980894160539, "dur":6093, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1653980894166640, "dur":135, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":4, "ts":1653980894166775, "dur":57, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1653980894166833, "dur":80, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/MonoBleedingEdge/etc/mono/2.0/web.config" }}
-,{ "pid":12345, "tid":4, "ts":1653980894166913, "dur":57, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1653980894166971, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/MonoBleedingEdge/etc/mono/browscap.ini" }}
-,{ "pid":12345, "tid":4, "ts":1653980894167028, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1653980894167080, "dur":56619, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.XRModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1653980894223700, "dur":58, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1653980894223759, "dur":145431, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.UI.dll" }}
-,{ "pid":12345, "tid":4, "ts":1653980894369191, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1653980894369243, "dur":23718, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.HotReloadModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1653980894392961, "dur":62, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1653980894393024, "dur":19939, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1653980894412964, "dur":83, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1653980894413049, "dur":40008, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.AudioModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1653980894453058, "dur":80, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1653980894453140, "dur":172732, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/Unity.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":4, "ts":1653980894625873, "dur":55, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1653980894625931, "dur":0, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
-,{ "pid":12345, "tid":4, "ts":1653980894625932, "dur":0, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1653980894160137, "dur":383, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1653980894160520, "dur":6097, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1653980894166629, "dur":80, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":5, "ts":1653980894166709, "dur":56, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1653980894166767, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/MonoBleedingEdge/etc/mono/4.0/web.config" }}
-,{ "pid":12345, "tid":5, "ts":1653980894166845, "dur":55, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1653980894166901, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
-,{ "pid":12345, "tid":5, "ts":1653980894166966, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1653980894167009, "dur":69, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/UnityCrashHandler32.exe" }}
-,{ "pid":12345, "tid":5, "ts":1653980894167078, "dur":69, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1653980894167148, "dur":21484, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.WindModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1653980894188633, "dur":57, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1653980894188691, "dur":18867, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1653980894207559, "dur":97, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1653980894207658, "dur":53608, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1653980894261267, "dur":81, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1653980894261350, "dur":90878, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1653980894352229, "dur":88, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1653980894352319, "dur":36159, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.InputModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1653980894388481, "dur":65, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1653980894388547, "dur":27622, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1653980894416171, "dur":74, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1653980894416247, "dur":36870, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.AnimationModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1653980894453117, "dur":54, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1653980894453173, "dur":791, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/Unity.Services.Core.Threading.dll" }}
-,{ "pid":12345, "tid":5, "ts":1653980894453965, "dur":58, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1653980894454024, "dur":37922, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
-,{ "pid":12345, "tid":5, "ts":1653980894491947, "dur":86, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1653980894492036, "dur":24020, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/Unity.Services.Core.dll" }}
-,{ "pid":12345, "tid":5, "ts":1653980894516057, "dur":81, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1653980894516140, "dur":109862, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1653980894160415, "dur":183, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1653980894160598, "dur":6032, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1653980894166631, "dur":104, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
-,{ "pid":12345, "tid":6, "ts":1653980894166735, "dur":200, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1653980894166936, "dur":79, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/MonoBleedingEdge/etc/mono/config" }}
-,{ "pid":12345, "tid":6, "ts":1653980894167015, "dur":143, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1653980894167158, "dur":21019, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.VRModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1653980894188177, "dur":109, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1653980894188287, "dur":26089, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1653980894214378, "dur":77, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1653980894214457, "dur":29070, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.UIModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1653980894243528, "dur":80, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1653980894243610, "dur":33979, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.TilemapModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1653980894277591, "dur":87, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1653980894277680, "dur":44482, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.TerrainModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1653980894322163, "dur":82, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1653980894322247, "dur":17370, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.ProfilerModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1653980894339619, "dur":80, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1653980894339702, "dur":20490, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1653980894360193, "dur":86, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1653980894360281, "dur":32389, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1653980894392671, "dur":80, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1653980894392753, "dur":21740, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.DirectorModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1653980894414494, "dur":91, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1653980894414587, "dur":17530, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.ARModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1653980894432118, "dur":83, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1653980894432203, "dur":31976, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.AIModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1653980894464180, "dur":107, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1653980894464288, "dur":732, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/Unity.Services.Core.Networking.dll" }}
-,{ "pid":12345, "tid":6, "ts":1653980894465020, "dur":58, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1653980894465079, "dur":41470, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/Unity.Services.Core.Internal.dll" }}
-,{ "pid":12345, "tid":6, "ts":1653980894506550, "dur":61, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1653980894506613, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/sharedassets0.assets.resS" }}
-,{ "pid":12345, "tid":6, "ts":1653980894506667, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1653980894506685, "dur":2715, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/sharedassets0.assets.resS" }}
-,{ "pid":12345, "tid":6, "ts":1653980894509443, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/resources.assets.resS" }}
-,{ "pid":12345, "tid":6, "ts":1653980894509488, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1653980894509495, "dur":1800, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/resources.assets.resS" }}
-,{ "pid":12345, "tid":6, "ts":1653980894511339, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/level0" }}
-,{ "pid":12345, "tid":6, "ts":1653980894511389, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1653980894511397, "dur":2167, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/level0" }}
-,{ "pid":12345, "tid":6, "ts":1653980894513607, "dur":130, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/boot.config" }}
-,{ "pid":12345, "tid":6, "ts":1653980894513737, "dur":49, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1653980894513787, "dur":112212, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1653980894160384, "dur":204, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1653980894160588, "dur":6030, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1653980894166630, "dur":107, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/MonoBleedingEdge/etc/mono/4.5/web.config" }}
-,{ "pid":12345, "tid":7, "ts":1653980894166737, "dur":74, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1653980894166811, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
-,{ "pid":12345, "tid":7, "ts":1653980894166878, "dur":56, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1653980894166934, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":7, "ts":1653980894167003, "dur":55, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1653980894167058, "dur":102, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Resources/unity default resources" }}
-,{ "pid":12345, "tid":7, "ts":1653980894167160, "dur":57, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1653980894167218, "dur":38453, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.VFXModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1653980894205672, "dur":75, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1653980894205749, "dur":17858, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1653980894223608, "dur":95, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1653980894223705, "dur":122497, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.UIElementsModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1653980894346203, "dur":87, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1653980894346292, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1653980894346350, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1653980894346395, "dur":26312, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.LocalizationModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1653980894372708, "dur":81, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1653980894372792, "dur":20464, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.GridModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1653980894393257, "dur":56, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1653980894393314, "dur":111507, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.CoreModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1653980894504822, "dur":81, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1653980894504905, "dur":143, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
-,{ "pid":12345, "tid":7, "ts":1653980894505049, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1653980894505098, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Resources/unity_builtin_extra" }}
-,{ "pid":12345, "tid":7, "ts":1653980894505171, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1653980894505949, "dur":1725, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Resources/unity_builtin_extra" }}
-,{ "pid":12345, "tid":7, "ts":1653980894507719, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/sharedassets0.assets" }}
-,{ "pid":12345, "tid":7, "ts":1653980894507771, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1653980894507779, "dur":1244, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/sharedassets0.assets" }}
-,{ "pid":12345, "tid":7, "ts":1653980894509122, "dur":140, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/ScriptingAssemblies.json" }}
-,{ "pid":12345, "tid":7, "ts":1653980894509262, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1653980894509316, "dur":911, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/RuntimeInitializeOnLoads.json" }}
-,{ "pid":12345, "tid":7, "ts":1653980894510228, "dur":56, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1653980894510286, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/resources.assets" }}
-,{ "pid":12345, "tid":7, "ts":1653980894510337, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1653980894510365, "dur":1184, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/resources.assets" }}
-,{ "pid":12345, "tid":7, "ts":1653980894511591, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/globalgamemanagers.assets" }}
-,{ "pid":12345, "tid":7, "ts":1653980894511637, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1653980894511644, "dur":1009, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/globalgamemanagers.assets" }}
-,{ "pid":12345, "tid":7, "ts":1653980894512700, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/globalgamemanagers" }}
-,{ "pid":12345, "tid":7, "ts":1653980894512759, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1653980894512770, "dur":951, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/globalgamemanagers" }}
-,{ "pid":12345, "tid":7, "ts":1653980894513766, "dur":112233, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1653980894160261, "dur":307, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1653980894160568, "dur":6076, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1653980894166644, "dur":69, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":8, "ts":1653980894166714, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1653980894166768, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
-,{ "pid":12345, "tid":8, "ts":1653980894166823, "dur":59, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1653980894166883, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
-,{ "pid":12345, "tid":8, "ts":1653980894166938, "dur":57, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1653980894166996, "dur":91, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/UnityPlayer.dll" }}
-,{ "pid":12345, "tid":8, "ts":1653980894167087, "dur":128, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1653980894167216, "dur":41494, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.VideoModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1653980894208711, "dur":80, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1653980894208793, "dur":67578, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.UNETModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1653980894276372, "dur":81, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1653980894276455, "dur":18570, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1653980894295026, "dur":75, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1653980894295109, "dur":17531, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.StreamingModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1653980894312641, "dur":82, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1653980894312725, "dur":20195, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1653980894332921, "dur":102, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1653980894333024, "dur":45023, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.Physics2DModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1653980894378047, "dur":78, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1653980894378127, "dur":27506, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.GIModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1653980894405634, "dur":87, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1653980894405724, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1653980894405777, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1653980894405822, "dur":166, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1653980894405988, "dur":49, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1653980894406038, "dur":20446, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.ClothModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1653980894426485, "dur":79, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1653980894426566, "dur":116428, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1653980894542996, "dur":120, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1653980894543119, "dur":82884, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1653980894637803, "dur":1596, "ph":"X", "name": "ProfilerWriteOutput" }
-,{ "pid": 0, "tid": 1, "ts": 1653980894695777, "dur": 2383, "ph": "X", "name": "backend_profiler0.traceevents", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1653980894695290, "dur": 2944, "ph": "X", "name": "Write chrome-trace events", "args": {} },
+,{ "pid":12345, "tid":0, "ts":1654247678930647, "dur":2261, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1654247678932919, "dur":455, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
+,{ "pid":12345, "tid":0, "ts":1654247678933399, "dur":33, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":12345, "tid":0, "ts":1654247678933434, "dur":651, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
+,{ "pid":12345, "tid":0, "ts":1654247678934151, "dur":899, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1654247678935050, "dur":1, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1654247679111949, "dur":159, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1654247679112108, "dur":60, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1654247679112168, "dur":21, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1654247679112189, "dur":36, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1654247679112225, "dur":4, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1654247679112230, "dur":9, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1654247679112239, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1654247679112242, "dur":9, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1654247679112251, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1654247679112254, "dur":8, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1654247679112262, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1654247679112264, "dur":8, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1654247679112272, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1654247679112274, "dur":8, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1654247679112282, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1654247679112284, "dur":8, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1654247679112292, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1654247679112302, "dur":2, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1654247679112349, "dur":9614, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1654247678935412, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1654247678935412, "dur":5164, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1654247678940576, "dur":404, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":1, "ts":1654247678940981, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1654247678941034, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1654247678941107, "dur":62, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1654247678941170, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1654247678941224, "dur":59, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1654247678941283, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1654247678941328, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1654247678941373, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1654247678941438, "dur":59, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1654247678941497, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1654247678941551, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1654247678941600, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1654247678941656, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1654247678941708, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1654247678941757, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1654247678941810, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1654247678941861, "dur":46, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1654247678941907, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1654247678941958, "dur":58, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1654247678942016, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1654247678942075, "dur":191, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1654247678942267, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1654247678942328, "dur":76, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1654247678942405, "dur":98, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1654247678942503, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1654247678942556, "dur":47488, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
+,{ "pid":12345, "tid":1, "ts":1654247678990045, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1654247678990114, "dur":134, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":1, "ts":1654247678990249, "dur":160, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1654247678990410, "dur":1303, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":1, "ts":1654247678991713, "dur":58, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1654247678991772, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/resources.assets" }}
+,{ "pid":12345, "tid":1, "ts":1654247678991827, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1654247678991846, "dur":5159, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/resources.assets" }}
+,{ "pid":12345, "tid":1, "ts":1654247678997057, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/level0" }}
+,{ "pid":12345, "tid":1, "ts":1654247678997118, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1654247678997152, "dur":2224, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/level0" }}
+,{ "pid":12345, "tid":1, "ts":1654247678999425, "dur":112522, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1654247678935194, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1654247678935195, "dur":5168, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1654247678940371, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":2, "ts":1654247678940436, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1654247678940489, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":2, "ts":1654247678940539, "dur":46, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1654247678940586, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":2, "ts":1654247678940662, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1654247678940711, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":2, "ts":1654247678940777, "dur":49, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1654247678940826, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1654247678940876, "dur":77, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1654247678940954, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1654247678941009, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1654247678941062, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1654247678941116, "dur":63, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1654247678941180, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1654247678941232, "dur":58, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1654247678941290, "dur":228, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1654247678941518, "dur":55, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1654247678941574, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1654247678941625, "dur":55, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1654247678941680, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1654247678941739, "dur":107, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1654247678941846, "dur":166, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1654247678942012, "dur":69, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1654247678942082, "dur":202, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1654247678942285, "dur":76, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1654247678942362, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1654247678942411, "dur":74, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1654247678942486, "dur":169362, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":2, "ts":1654247679111849, "dur":63, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1654247679111915, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
+,{ "pid":12345, "tid":2, "ts":1654247679111916, "dur":0, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1654247678935389, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1654247678935389, "dur":4970, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1654247678940370, "dur":85, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":3, "ts":1654247678940455, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1654247678940508, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":3, "ts":1654247678940561, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1654247678940609, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":3, "ts":1654247678940669, "dur":57, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1654247678940726, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":3, "ts":1654247678940788, "dur":85, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1654247678940874, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1654247678940930, "dur":63, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1654247678940993, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1654247678941050, "dur":46, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1654247678941097, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1654247678941156, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1654247678941204, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1654247678941253, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1654247678941297, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1654247678941346, "dur":49, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1654247678941396, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1654247678941441, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1654247678941495, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1654247678941547, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1654247678941594, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1654247678941647, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1654247678941691, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1654247678941742, "dur":56, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1654247678941799, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1654247678941846, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1654247678941899, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1654247678941946, "dur":61, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1654247678942008, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1654247678942070, "dur":186, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1654247678942257, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1654247678942326, "dur":56, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1654247678942383, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1654247678942443, "dur":56, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1654247678942500, "dur":1253, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/Unity.Services.Core.Threading.dll" }}
+,{ "pid":12345, "tid":3, "ts":1654247678943754, "dur":109, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1654247678943979, "dur":47334, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/Unity.Services.Core.Internal.dll" }}
+,{ "pid":12345, "tid":3, "ts":1654247678991314, "dur":56, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1654247678991372, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":3, "ts":1654247678991423, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1654247678991442, "dur":7214, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":3, "ts":1654247678998708, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":3, "ts":1654247678998763, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1654247678998773, "dur":1206, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":3, "ts":1654247679000020, "dur":111958, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1654247678935160, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1654247678935161, "dur":5192, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1654247678940371, "dur":0, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":4, "ts":1654247678940372, "dur":96, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1654247678940476, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/app.info" }}
+,{ "pid":12345, "tid":4, "ts":1654247678940477, "dur":167, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1654247678940644, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":4, "ts":1654247678940712, "dur":58, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1654247678940770, "dur":2488, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI.exe" }}
+,{ "pid":12345, "tid":4, "ts":1654247678943259, "dur":594, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1654247678943857, "dur":1216, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/Unity.Services.Core.Networking.dll" }}
+,{ "pid":12345, "tid":4, "ts":1654247678945074, "dur":69, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1654247678945146, "dur":932, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/Unity.Services.Core.Environments.dll" }}
+,{ "pid":12345, "tid":4, "ts":1654247678946079, "dur":109, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1654247678946192, "dur":1241, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/Unity.Services.Core.Device.dll" }}
+,{ "pid":12345, "tid":4, "ts":1654247678947434, "dur":66, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1654247678947502, "dur":25546, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/Unity.Services.Core.Configuration.dll" }}
+,{ "pid":12345, "tid":4, "ts":1654247678973049, "dur":65, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1654247678973117, "dur":2120, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/Unity.Services.Core.Analytics.dll" }}
+,{ "pid":12345, "tid":4, "ts":1654247678975238, "dur":104, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1654247678975344, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":4, "ts":1654247678975403, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1654247678975452, "dur":95, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":4, "ts":1654247678975547, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1654247678975596, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":4, "ts":1654247678975642, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1654247678975694, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":4, "ts":1654247678975739, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1654247678975782, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":4, "ts":1654247678975826, "dur":1957, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1654247678977788, "dur":110, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":4, "ts":1654247678977898, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1654247678977952, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":4, "ts":1654247678978002, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1654247678978042, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":4, "ts":1654247678978082, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1654247678978123, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":4, "ts":1654247678978171, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1654247678978215, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":4, "ts":1654247678978258, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1654247678978298, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":4, "ts":1654247678978341, "dur":66, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1654247678978408, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":4, "ts":1654247678978457, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1654247678978501, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":4, "ts":1654247678978545, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1654247678978587, "dur":123, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":4, "ts":1654247678978710, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1654247678978749, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":4, "ts":1654247678978792, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1654247678978835, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":4, "ts":1654247678978888, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1654247678978931, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":4, "ts":1654247678978974, "dur":65, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1654247678979041, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":4, "ts":1654247678979112, "dur":58, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1654247678979171, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":4, "ts":1654247678979224, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1654247678979270, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":4, "ts":1654247678979316, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1654247678979363, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":4, "ts":1654247678979416, "dur":62, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1654247678979479, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":4, "ts":1654247678979523, "dur":64, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1654247678979589, "dur":91536, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":4, "ts":1654247679071132, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1654247679071221, "dur":858, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":4, "ts":1654247679072110, "dur":39875, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1654247678935423, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1654247678935423, "dur":4943, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1654247678940369, "dur":101, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":5, "ts":1654247678940470, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1654247678940524, "dur":317, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":5, "ts":1654247678940841, "dur":220, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1654247678941062, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1654247678941117, "dur":59, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1654247678941177, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1654247678941226, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1654247678941274, "dur":112916, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":5, "ts":1654247679054191, "dur":57, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1654247679054250, "dur":57706, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1654247678935432, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1654247678935432, "dur":4987, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1654247678940422, "dur":149, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":6, "ts":1654247678940571, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1654247678940623, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":6, "ts":1654247678940700, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1654247678940750, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":6, "ts":1654247678940803, "dur":74, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1654247678940879, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1654247678940937, "dur":62, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1654247678941000, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1654247678941054, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1654247678941106, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1654247678941169, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1654247678941221, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1654247678941275, "dur":46, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1654247678941321, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1654247678941379, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1654247678941431, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1654247678941493, "dur":46, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1654247678941539, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1654247678941590, "dur":54, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1654247678941645, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1654247678941703, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1654247678941751, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1654247678941798, "dur":135, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1654247678941934, "dur":403, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1654247678942337, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1654247678942391, "dur":124, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1654247678942515, "dur":55, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1654247678942571, "dur":1331, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
+,{ "pid":12345, "tid":6, "ts":1654247678943902, "dur":64, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1654247678944014, "dur":1229, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
+,{ "pid":12345, "tid":6, "ts":1654247678945243, "dur":76, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1654247678945320, "dur":34688, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/Unity.Services.Core.dll" }}
+,{ "pid":12345, "tid":6, "ts":1654247678980009, "dur":79, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1654247678980091, "dur":189, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
+,{ "pid":12345, "tid":6, "ts":1654247678980280, "dur":62, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1654247678980343, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":6, "ts":1654247678980407, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1654247678981167, "dur":1613, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":6, "ts":1654247678982830, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":6, "ts":1654247678982874, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1654247678982882, "dur":16262, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":6, "ts":1654247678999188, "dur":112760, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1654247678935160, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1654247678935161, "dur":5201, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1654247678940370, "dur":105, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":7, "ts":1654247678940475, "dur":64, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1654247678940540, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":7, "ts":1654247678940602, "dur":60, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1654247678940663, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":7, "ts":1654247678940727, "dur":54, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1654247678940782, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":7, "ts":1654247678940837, "dur":95, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1654247678940933, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1654247678940996, "dur":288, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1654247678941285, "dur":92, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1654247678941377, "dur":60, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1654247678941438, "dur":351, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1654247678941789, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1654247678941833, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1654247678941878, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1654247678941919, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":7, "ts":1654247678941968, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1654247678942014, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1654247678942077, "dur":576, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1654247678942672, "dur":45468, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/Unity.Services.Core.Registration.dll" }}
+,{ "pid":12345, "tid":7, "ts":1654247678988141, "dur":80, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1654247678988223, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":7, "ts":1654247678988280, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1654247678988301, "dur":8902, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":7, "ts":1654247678997250, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":7, "ts":1654247678997300, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1654247678997308, "dur":1478, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":7, "ts":1654247678998833, "dur":153, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/boot.config" }}
+,{ "pid":12345, "tid":7, "ts":1654247678998986, "dur":46, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1654247678999033, "dur":112912, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1654247678935279, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1654247678935279, "dur":5081, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1654247678940370, "dur":105, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":8, "ts":1654247678940475, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1654247678940523, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":8, "ts":1654247678940591, "dur":46, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1654247678940638, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":8, "ts":1654247678940702, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1654247678940755, "dur":115, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/UnityCrashHandler32.exe" }}
+,{ "pid":12345, "tid":8, "ts":1654247678940870, "dur":64, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1654247678940935, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1654247678940994, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1654247678941048, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1654247678941109, "dur":59, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1654247678941169, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1654247678941219, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1654247678941266, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1654247678941316, "dur":49, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1654247678941366, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1654247678941420, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1654247678941472, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1654247678941520, "dur":49, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1654247678941570, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1654247678941621, "dur":54, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1654247678941675, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1654247678941738, "dur":55, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1654247678941793, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1654247678941839, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1654247678941887, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1654247678941952, "dur":71, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1654247678942023, "dur":267, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1654247678942290, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1654247678942344, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1654247678942397, "dur":58, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1654247678942456, "dur":70532, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/po18ter/Documents/GitHub/TPI/RubiksRevenge - Launcher Windows/TPI_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":8, "ts":1654247679012989, "dur":57, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1654247679013047, "dur":98905, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1654247679125053, "dur":1839, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid": 0, "tid": 1, "ts": 1654247679187335, "dur": 1416, "ph": "X", "name": "backend_profiler0.traceevents", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1654247679182793, "dur": 5998, "ph": "X", "name": "Write chrome-trace events", "args": {} },

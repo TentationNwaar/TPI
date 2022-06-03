@@ -20,7 +20,6 @@ public class S_CubeMap : MonoBehaviour
     public Transform front;
     public Transform back;
 
-    Color colorF;
     internal bool ApplyDayanColor = false;
 
     //Permet d'appliquer les couleurs sur la map
@@ -42,7 +41,6 @@ public class S_CubeMap : MonoBehaviour
         int i = 0;
         foreach (Transform map in side)
         {
-
             if (face[i].name[0] == 'F')
             {
                 map.GetComponent<Image>().color = Color.green;
@@ -86,9 +84,7 @@ public class S_CubeMap : MonoBehaviour
                     map.GetComponent<Image>().color = Color.magenta;
                 }
             }
-            i++;
-
-                     
+            i++;          
         }
     }
 }

@@ -80,8 +80,8 @@
 45-->[:unityLibrary] C:\Users\po18ter\Documents\GitHub\TPI\TPI\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:35:13-44
 46            android:resizeableActivity="false"
 46-->[:unityLibrary] C:\Users\po18ter\Documents\GitHub\TPI\TPI\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:36:13-47
-47            android:screenOrientation="fullSensor"
-47-->[:unityLibrary] C:\Users\po18ter\Documents\GitHub\TPI\TPI\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:37:13-51
+47            android:screenOrientation="sensorLandscape"
+47-->[:unityLibrary] C:\Users\po18ter\Documents\GitHub\TPI\TPI\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:37:13-56
 48            android:theme="@style/UnityThemeSelector" >
 48-->[:unityLibrary] C:\Users\po18ter\Documents\GitHub\TPI\TPI\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:38:13-54
 49            <intent-filter>

@@ -30,15 +30,15 @@ ADDED from C:\Users\po18ter\Documents\GitHub\TPI\TPI\Library\Bee\Android\Prj\Mon
 activity#com.unity3d.player.UnityPlayerActivity
 ADDED from C:\Users\po18ter\Documents\GitHub\TPI\TPI\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:5-11:16
 	android:screenOrientation
-		ADDED from C:\Users\po18ter\Documents\GitHub\TPI\TPI\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:111-149
+		ADDED from C:\Users\po18ter\Documents\GitHub\TPI\TPI\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:111-154
 	android:launchMode
-		ADDED from C:\Users\po18ter\Documents\GitHub\TPI\TPI\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:150-181
+		ADDED from C:\Users\po18ter\Documents\GitHub\TPI\TPI\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:155-186
 	android:hardwareAccelerated
-		ADDED from C:\Users\po18ter\Documents\GitHub\TPI\TPI\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:399-434
+		ADDED from C:\Users\po18ter\Documents\GitHub\TPI\TPI\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:404-439
 	android:resizeableActivity
-		ADDED from C:\Users\po18ter\Documents\GitHub\TPI\TPI\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:364-398
+		ADDED from C:\Users\po18ter\Documents\GitHub\TPI\TPI\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:369-403
 	android:configChanges
-		ADDED from C:\Users\po18ter\Documents\GitHub\TPI\TPI\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:182-363
+		ADDED from C:\Users\po18ter\Documents\GitHub\TPI\TPI\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:187-368
 	android:theme
 		ADDED from C:\Users\po18ter\Documents\GitHub\TPI\TPI\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:69-110
 	android:name

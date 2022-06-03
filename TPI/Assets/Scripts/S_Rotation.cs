@@ -18,7 +18,7 @@ public class S_Rotation : MonoBehaviour
     internal bool dragging = false;
 
     //Crée une variable avec le composant RigidBody
-    Rigidbody rb;
+    internal Rigidbody rb;
     internal Vector3 lastRotation;
     internal Vector3 lastPosition;
 
@@ -27,8 +27,10 @@ public class S_Rotation : MonoBehaviour
 
     //On fait appel au script du menu pour le gérer
     public S_PauseMenu s_PauseMenu;
-
     public S_Automate s_Automate;
+
+    //internal float rotationArrowLeftRight;
+    //internal float rotationArrowUpDown;
 
     // Start is called before the first frame update
     void Start()
@@ -37,11 +39,10 @@ public class S_Rotation : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         lastRotation = cube.transform.eulerAngles;
         lastPosition = cube.transform.localPosition;
+        s_Automate = FindObjectOfType<S_Automate>();
 
         //Résout le bug du cube qui se déplace seul
-        Input.GetMouseButtonDown(0);
-
-        s_Automate = FindObjectOfType<S_Automate>();
+        rb.constraints = RigidbodyConstraints.FreezeAll;
     }
 
     // Update is called once per frame
@@ -84,8 +85,16 @@ public class S_Rotation : MonoBehaviour
     //Méthode qui effectue des actions tous les tels frames
     void FixedUpdate()
     {
+        float rotationArrowLeftRight = Input.GetAxis("Horizontal") * rotationSpeed * Time.deltaTime;
+        float rotationArrowUpDown = Input.GetAxis("Vertical") * rotationSpeed * Time.deltaTime;
+
+        if (!dragging && !s_Automate.isShuffuling && !s_Automate.isSolving)
+        {
+            transform.Rotate(rotationArrowLeftRight, rotationArrowUpDown, 0f);
+        }
+
         //Si on bouge, on enlève les restrictions
-        if (dragging && !s_Automate.isShuffuling)
+        if (dragging && !s_Automate.isShuffuling && !s_Automate.isSolving)
         {
             rb.constraints = RigidbodyConstraints.None;
             //On utilise les axe d'unity XY pour faire tourner le cube en fonction 
@@ -96,26 +105,6 @@ public class S_Rotation : MonoBehaviour
             //On applique la force au RigidBody
             rb.AddTorque(Vector3.down*x);
             rb.AddTorque(Vector3.right*y);
-        }
-
-        if (Input.GetKeyDown(KeyCode.UpArrow))
-        {
-            cube.transform.Rotate(0,90,0);
-        }
-
-        if (Input.GetKeyDown(KeyCode.DownArrow))
-        {
-            cube.transform.Rotate(0,-90,0);
-        }
-
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
-        {
-            cube.transform.Rotate(90,0,0);
-        }
-
-        if (Input.GetKeyDown(KeyCode.RightArrow))
-        {
-            cube.transform.Rotate(-90,0,0);
         }
     }
 

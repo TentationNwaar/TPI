@@ -55,15 +55,15 @@
 32            android:name="com.unity3d.player.UnityPlayerActivity"
 32-->C:\Users\po18ter\Documents\GitHub\TPI\TPI\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:15-68
 33            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density"
-33-->C:\Users\po18ter\Documents\GitHub\TPI\TPI\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:182-363
+33-->C:\Users\po18ter\Documents\GitHub\TPI\TPI\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:187-368
 34            android:hardwareAccelerated="false"
-34-->C:\Users\po18ter\Documents\GitHub\TPI\TPI\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:399-434
+34-->C:\Users\po18ter\Documents\GitHub\TPI\TPI\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:404-439
 35            android:launchMode="singleTask"
-35-->C:\Users\po18ter\Documents\GitHub\TPI\TPI\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:150-181
+35-->C:\Users\po18ter\Documents\GitHub\TPI\TPI\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:155-186
 36            android:resizeableActivity="false"
-36-->C:\Users\po18ter\Documents\GitHub\TPI\TPI\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:364-398
-37            android:screenOrientation="fullSensor"
-37-->C:\Users\po18ter\Documents\GitHub\TPI\TPI\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:111-149
+36-->C:\Users\po18ter\Documents\GitHub\TPI\TPI\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:369-403
+37            android:screenOrientation="sensorLandscape"
+37-->C:\Users\po18ter\Documents\GitHub\TPI\TPI\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:111-154
 38            android:theme="@style/UnityThemeSelector" >
 38-->C:\Users\po18ter\Documents\GitHub\TPI\TPI\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:69-110
 39            <intent-filter>
