@@ -42,6 +42,8 @@ public class S_PivotRotation : MonoBehaviour
     private S_CubeState s_CubeState;
     public S_Automate s_Automate;
 
+    public S_Rotation s_Rotation;
+
     //Fait référence à la dernière rotation
     internal Quaternion lastRotation;
 
@@ -51,6 +53,7 @@ public class S_PivotRotation : MonoBehaviour
         s_ReadCube = FindObjectOfType<S_ReadCube>();
         s_CubeState = FindObjectOfType<S_CubeState>();
         s_Automate = FindObjectOfType<S_Automate>();
+        s_Rotation = FindObjectOfType<S_Rotation>();
         //Permet de définir la dernière rotation
         lastRotation = this.transform.localRotation;
     }
@@ -66,6 +69,7 @@ public class S_PivotRotation : MonoBehaviour
                 RotateToRightAngle();
             }
         }
+
         if (autoRotating)
         {
             //Corrige la rotation, evite qu'elle bug

@@ -13608,32 +13608,34 @@ struct U3CU3Ec_tB49A22A025D964B84575B3B9CAEDF32DAE8BE9B1_StaticFields
 {
 	// S_Automate/<>c S_Automate/<>c::<>9
 	U3CU3Ec_tB49A22A025D964B84575B3B9CAEDF32DAE8BE9B1* ___U3CU3E9_0;
-	// System.Func`2<System.Collections.Generic.List`1<UnityEngine.GameObject>,System.Single> S_Automate/<>c::<>9__13_0
-	Func_2_tCF02C836167C298A75A26DC90959C9AAE9153E73* ___U3CU3E9__13_0_1;
-	// System.Func`2<System.Collections.Generic.List`1<UnityEngine.GameObject>,System.Single> S_Automate/<>c::<>9__13_1
-	Func_2_tCF02C836167C298A75A26DC90959C9AAE9153E73* ___U3CU3E9__13_1_2;
-	// System.Func`2<System.Collections.Generic.List`1<UnityEngine.GameObject>,System.Single> S_Automate/<>c::<>9__13_2
-	Func_2_tCF02C836167C298A75A26DC90959C9AAE9153E73* ___U3CU3E9__13_2_3;
+	// System.Func`2<System.Collections.Generic.List`1<UnityEngine.GameObject>,System.Single> S_Automate/<>c::<>9__16_0
+	Func_2_tCF02C836167C298A75A26DC90959C9AAE9153E73* ___U3CU3E9__16_0_1;
+	// System.Func`2<System.Collections.Generic.List`1<UnityEngine.GameObject>,System.Single> S_Automate/<>c::<>9__16_1
+	Func_2_tCF02C836167C298A75A26DC90959C9AAE9153E73* ___U3CU3E9__16_1_2;
+	// System.Func`2<System.Collections.Generic.List`1<UnityEngine.GameObject>,System.Single> S_Automate/<>c::<>9__16_2
+	Func_2_tCF02C836167C298A75A26DC90959C9AAE9153E73* ___U3CU3E9__16_2_3;
 };
 
-// S_Automate/<ClearAfterSolve>d__10
-struct U3CClearAfterSolveU3Ed__10_tF118332557EE30358E4F5CFE688723D0581DB1B4  : public RuntimeObject
+// S_Automate/<ClearAfterSolve>d__13
+struct U3CClearAfterSolveU3Ed__13_t93C890566785F719FB8055501C7937D188490B25  : public RuntimeObject
 {
-	// System.Int32 S_Automate/<ClearAfterSolve>d__10::<>1__state
+	// System.Int32 S_Automate/<ClearAfterSolve>d__13::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// System.Object S_Automate/<ClearAfterSolve>d__10::<>2__current
+	// System.Object S_Automate/<ClearAfterSolve>d__13::<>2__current
 	RuntimeObject* ___U3CU3E2__current_1;
-	// S_Automate S_Automate/<ClearAfterSolve>d__10::<>4__this
+	// S_Automate S_Automate/<ClearAfterSolve>d__13::<>4__this
 	S_Automate_tE6B9B8D0C1BE30C6478912E5E6BDC9EF55257451* ___U3CU3E4__this_2;
 };
 
-// S_Automate/<WaitBeforeShuffle>d__16
-struct U3CWaitBeforeShuffleU3Ed__16_t8D272C720C66F622F11CDBE428B63406B4D933A5  : public RuntimeObject
+// S_Automate/<WaitBeforeShuffle>d__19
+struct U3CWaitBeforeShuffleU3Ed__19_t6CFDAB91FEF32DED35986A29C81721464FE4CFE8  : public RuntimeObject
 {
-	// System.Int32 S_Automate/<WaitBeforeShuffle>d__16::<>1__state
+	// System.Int32 S_Automate/<WaitBeforeShuffle>d__19::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// System.Object S_Automate/<WaitBeforeShuffle>d__16::<>2__current
+	// System.Object S_Automate/<WaitBeforeShuffle>d__19::<>2__current
 	RuntimeObject* ___U3CU3E2__current_1;
+	// S_Automate S_Automate/<WaitBeforeShuffle>d__19::<>4__this
+	S_Automate_tE6B9B8D0C1BE30C6478912E5E6BDC9EF55257451* ___U3CU3E4__this_2;
 };
 
 // S_SolveTwoPhase/<WaitBeforeSolve>d__10
@@ -46176,6 +46178,12 @@ struct S_Automate_tE6B9B8D0C1BE30C6478912E5E6BDC9EF55257451  : public MonoBehavi
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___cube_9;
 	// System.Collections.Generic.List`1<S_Automate/Move> S_Automate::history
 	List_1_t9B0A39186E5C0156FF3DEC6FD728D5BC2410E5CB* ___history_10;
+	// System.Boolean S_Automate::isShuffuling
+	bool ___isShuffuling_11;
+	// System.Boolean S_Automate::isSolving
+	bool ___isSolving_12;
+	// System.Int32 S_Automate::shuffleLength
+	int32_t ___shuffleLength_13;
 };
 
 struct S_Automate_tE6B9B8D0C1BE30C6478912E5E6BDC9EF55257451_StaticFields
@@ -46217,10 +46225,8 @@ struct S_CubeMap_t99FA52A13ED18068DBC29B28E76880F64014109C  : public MonoBehavio
 	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___front_10;
 	// UnityEngine.Transform S_CubeMap::back
 	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___back_11;
-	// UnityEngine.Color S_CubeMap::colorF
-	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___colorF_12;
 	// System.Boolean S_CubeMap::ApplyDayanColor
-	bool ___ApplyDayanColor_13;
+	bool ___ApplyDayanColor_12;
 };
 
 // S_CubeState
@@ -46288,8 +46294,10 @@ struct S_PivotRotation_tE05C723630944F0E0A9BB5C93335DBFACF9C5B89  : public MonoB
 	S_CubeState_tC6925CABB98D5B232628B8148930526BF0F8A4C9* ___s_CubeState_14;
 	// S_Automate S_PivotRotation::s_Automate
 	S_Automate_tE6B9B8D0C1BE30C6478912E5E6BDC9EF55257451* ___s_Automate_15;
+	// S_Rotation S_PivotRotation::s_Rotation
+	S_Rotation_t20E34420B39512BFFB62D64E812D13B519E70745* ___s_Rotation_16;
 	// UnityEngine.Quaternion S_PivotRotation::lastRotation
-	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___lastRotation_16;
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___lastRotation_17;
 };
 
 // S_ReadCube
@@ -46362,6 +46370,8 @@ struct S_Rotation_t20E34420B39512BFFB62D64E812D13B519E70745  : public MonoBehavi
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___cube_9;
 	// S_PauseMenu S_Rotation::s_PauseMenu
 	S_PauseMenu_t3D8673CA568DF737BBF3CA9157AF66677E589741* ___s_PauseMenu_10;
+	// S_Automate S_Rotation::s_Automate
+	S_Automate_tE6B9B8D0C1BE30C6478912E5E6BDC9EF55257451* ___s_Automate_11;
 };
 
 // S_SelectFace
@@ -55273,11 +55283,11 @@ const Il2CppTypeDefinitionSizes g_typeDefinitionSize3189 = { sizeof(U3CModuleU3E
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3190;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize3190 = { sizeof(int32_t)+ sizeof(RuntimeObject), sizeof(int32_t), 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3191;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize3191 = { sizeof(U3CClearAfterSolveU3Ed__10_tF118332557EE30358E4F5CFE688723D0581DB1B4), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize3191 = { sizeof(U3CClearAfterSolveU3Ed__13_t93C890566785F719FB8055501C7937D188490B25), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3192;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize3192 = { sizeof(U3CU3Ec_tB49A22A025D964B84575B3B9CAEDF32DAE8BE9B1), -1, sizeof(U3CU3Ec_tB49A22A025D964B84575B3B9CAEDF32DAE8BE9B1_StaticFields), 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3193;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize3193 = { sizeof(U3CWaitBeforeShuffleU3Ed__16_t8D272C720C66F622F11CDBE428B63406B4D933A5), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize3193 = { sizeof(U3CWaitBeforeShuffleU3Ed__19_t6CFDAB91FEF32DED35986A29C81721464FE4CFE8), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3194;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize3194 = { sizeof(S_Automate_tE6B9B8D0C1BE30C6478912E5E6BDC9EF55257451), -1, sizeof(S_Automate_tE6B9B8D0C1BE30C6478912E5E6BDC9EF55257451_StaticFields), 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3195;

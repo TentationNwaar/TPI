@@ -153,7 +153,7 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1530}
+      Script: {instanceID: 1532}
     - Class: 114
       Script: {instanceID: 1648}
     - Class: 114
@@ -183,25 +183,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3142}
     - Class: 114
-      Script: {instanceID: 3484}
+      Script: {instanceID: 3482}
     - Class: 114
-      Script: {instanceID: 3510}
+      Script: {instanceID: 3508}
     - Class: 114
-      Script: {instanceID: 3612}
+      Script: {instanceID: 3610}
     - Class: 114
-      Script: {instanceID: 3704}
+      Script: {instanceID: 3702}
     - Class: 114
-      Script: {instanceID: 4058}
+      Script: {instanceID: 4056}
+    - Class: 114
+      Script: {instanceID: 4172}
     - Class: 114
       Script: {instanceID: 4174}
     - Class: 114
-      Script: {instanceID: 4176}
+      Script: {instanceID: 4454}
     - Class: 114
-      Script: {instanceID: 4456}
+      Script: {instanceID: 4920}
     - Class: 114
-      Script: {instanceID: 4922}
-    - Class: 114
-      Script: {instanceID: 4966}
+      Script: {instanceID: 4964}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -549,7 +549,7 @@ ScriptsOnlyBuild:
     className: ToggleGroup
   - hash:
       serializedVersion: 2
-      Hash: 5755f5de95bd42a427dd5cdc6d8aa98e
+      Hash: 53a1caa6b3d45d69a1e916cbe42f001c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: S_Automate
@@ -577,12 +577,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Outline
-  - hash:
-      serializedVersion: 2
-      Hash: 20240431c815058690a3ba9bdfb91802
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: LookCamera
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -921,7 +915,7 @@ ScriptsOnlyBuild:
     className: TMP_TextEventCheck
   - hash:
       serializedVersion: 2
-      Hash: 7600fbe109e418edfb2c32f8643eeeae
+      Hash: edc0e0f403d4b9c4229e2233f5b1c124
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: S_PivotRotation

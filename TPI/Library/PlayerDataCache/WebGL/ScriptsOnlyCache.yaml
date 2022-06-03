@@ -33,6 +33,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
+    - UnityEngine.UI.Slider
   serializedClasses:
     Unity.TextMeshPro:
     - TMPro.FaceInfo_Legacy
@@ -66,6 +67,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.ColorBlock
     - UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
     - UnityEngine.UI.Navigation
+    - UnityEngine.UI.Slider/SliderEvent
     - UnityEngine.UI.SpriteState
   methodsToPreserve:
   - assembly: Assembly-CSharp
@@ -95,6 +97,24 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: S_PauseMenu
     methodName: QuitGame
+  - assembly: Assembly-CSharp
+    fullTypeName: S_PivotRotation
+    methodName: AdjustSpeed
+  - assembly: Assembly-CSharp
+    fullTypeName: S_PivotRotation
+    methodName: AdjustSpeed
+  - assembly: Assembly-CSharp
+    fullTypeName: S_PivotRotation
+    methodName: AdjustSpeed
+  - assembly: Assembly-CSharp
+    fullTypeName: S_PivotRotation
+    methodName: AdjustSpeed
+  - assembly: Assembly-CSharp
+    fullTypeName: S_PivotRotation
+    methodName: AdjustSpeed
+  - assembly: Assembly-CSharp
+    fullTypeName: S_PivotRotation
+    methodName: AdjustSpeed
   - assembly: Assembly-CSharp
     fullTypeName: S_PauseMenu
     methodName: Pause
@@ -133,53 +153,55 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1530}
+      Script: {instanceID: 1532}
     - Class: 114
-      Script: {instanceID: 1646}
+      Script: {instanceID: 1648}
     - Class: 114
-      Script: {instanceID: 1836}
+      Script: {instanceID: 1740}
     - Class: 114
-      Script: {instanceID: 1930}
+      Script: {instanceID: 1838}
     - Class: 114
-      Script: {instanceID: 2148}
+      Script: {instanceID: 1932}
     - Class: 114
-      Script: {instanceID: 2484}
+      Script: {instanceID: 2150}
     - Class: 114
-      Script: {instanceID: 2602}
+      Script: {instanceID: 2486}
     - Class: 114
-      Script: {instanceID: 2650}
+      Script: {instanceID: 2604}
     - Class: 114
-      Script: {instanceID: 2664}
+      Script: {instanceID: 2652}
     - Class: 114
-      Script: {instanceID: 2714}
+      Script: {instanceID: 2666}
     - Class: 114
-      Script: {instanceID: 2796}
+      Script: {instanceID: 2716}
     - Class: 114
-      Script: {instanceID: 3010}
+      Script: {instanceID: 2798}
     - Class: 114
-      Script: {instanceID: 3108}
+      Script: {instanceID: 3012}
     - Class: 114
-      Script: {instanceID: 3140}
+      Script: {instanceID: 3110}
     - Class: 114
-      Script: {instanceID: 3480}
+      Script: {instanceID: 3142}
     - Class: 114
-      Script: {instanceID: 3506}
+      Script: {instanceID: 3482}
     - Class: 114
-      Script: {instanceID: 3608}
+      Script: {instanceID: 3508}
     - Class: 114
-      Script: {instanceID: 3700}
+      Script: {instanceID: 3610}
     - Class: 114
-      Script: {instanceID: 4054}
+      Script: {instanceID: 3702}
     - Class: 114
-      Script: {instanceID: 4170}
+      Script: {instanceID: 4056}
     - Class: 114
       Script: {instanceID: 4172}
     - Class: 114
-      Script: {instanceID: 4452}
+      Script: {instanceID: 4174}
     - Class: 114
-      Script: {instanceID: 4918}
+      Script: {instanceID: 4454}
     - Class: 114
-      Script: {instanceID: 4962}
+      Script: {instanceID: 4920}
+    - Class: 114
+      Script: {instanceID: 4964}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -527,7 +549,7 @@ ScriptsOnlyBuild:
     className: ToggleGroup
   - hash:
       serializedVersion: 2
-      Hash: 1dc7ca0ed8599701c9f6991908e2b1fd
+      Hash: 53a1caa6b3d45d69a1e916cbe42f001c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: S_Automate
@@ -767,7 +789,7 @@ ScriptsOnlyBuild:
     className: TMP_Settings
   - hash:
       serializedVersion: 2
-      Hash: df5b75b19d5743bd8bc7b1013954f268
+      Hash: d89df45fa51bc19040230034270c0678
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: S_Rotation
@@ -893,7 +915,7 @@ ScriptsOnlyBuild:
     className: TMP_TextEventCheck
   - hash:
       serializedVersion: 2
-      Hash: 5ce0be9fc1ab7b22cf93aa154d332069
+      Hash: edc0e0f403d4b9c4229e2233f5b1c124
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: S_PivotRotation

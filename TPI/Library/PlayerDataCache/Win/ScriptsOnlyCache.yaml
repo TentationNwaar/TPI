@@ -915,7 +915,7 @@ ScriptsOnlyBuild:
     className: TMP_TextEventCheck
   - hash:
       serializedVersion: 2
-      Hash: 7600fbe109e418edfb2c32f8643eeeae
+      Hash: edc0e0f403d4b9c4229e2233f5b1c124
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: S_PivotRotation

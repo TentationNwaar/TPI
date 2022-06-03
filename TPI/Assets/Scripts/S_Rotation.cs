@@ -112,8 +112,4 @@ public class S_Rotation : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
-    public void RightClick()
-    {
-        Input.GetMouseButtonDown(1);
-    }
 }
